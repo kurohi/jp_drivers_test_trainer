@@ -1,0 +1,3 @@
+ollama_url: "http://localhost:11434"
+ollama_chat_model: "qwen3.6-256k"
+ollama_embed_model: "nomic-embed-text"
