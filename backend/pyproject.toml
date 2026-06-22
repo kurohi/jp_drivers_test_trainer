@@ -13,6 +13,9 @@ dependencies = [
     "sqlalchemy>=2",
     "aiosqlite>=0.20.0",
     "sqlite-vec>=0.1.0",
+    "chonkie[semantic]>=0.5.0",
+    "beautifulsoup4>=4.15.0",
+    "lxml>=6.1.1",
 ]
 
 [project.optional-dependencies]
@@ -44,6 +47,7 @@ build-backend = "hatchling.build"
 
 [dependency-groups]
 dev = [
+    "jsonschema>=4.26.0",
     "mypy>=2.1.0",
     "pytest>=9.1.1",
     "pytest-asyncio>=1.4.0",

@@ -1,0 +1,217 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SkillModule",
+  "description": "A skill-test walkthrough module for the JP Drivers Test Trainer. Each module covers one driving maneuver with bilingual (EN+PT) content, trajectory data, and guidance.",
+  "type": "object",
+  "required": [
+    "id",
+    "slug",
+    "name_en",
+    "name_pt",
+    "sort_order",
+    "overview",
+    "svg_path",
+    "correct_trajectory",
+    "wrong_trajectory",
+    "common_mistakes",
+    "checklist",
+    "pro_tip"
+  ],
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "Unique numeric identifier for the module.",
+      "minimum": 1
+    },
+    "slug": {
+      "type": "string",
+      "description": "URL-safe identifier, e.g., 's-curve', 'crank'.",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "name_en": {
+      "type": "string",
+      "description": "Display name in English.",
+      "minLength": 1
+    },
+    "name_pt": {
+      "type": "string",
+      "description": "Display name in Portuguese.",
+      "minLength": 1
+    },
+    "sort_order": {
+      "type": "integer",
+      "description": "Display order in the UI (lower = first).",
+      "minimum": 0
+    },
+    "overview": {
+      "type": "object",
+      "description": "What the maneuver tests and official point deductions.",
+      "required": ["en", "pt"],
+      "properties": {
+        "en": {
+          "type": "string",
+          "description": "English overview prose (200-300 words).",
+          "minLength": 50
+        },
+        "pt": {
+          "type": "string",
+          "description": "Portuguese overview prose (200-300 words).",
+          "minLength": 50
+        }
+      },
+      "additionalProperties": false
+    },
+    "svg_path": {
+      "type": "string",
+      "description": "Relative path to the SVG diagram asset, e.g., 'assets/skill/s-curve-diagram.svg'.",
+      "pattern": "^assets/skill/.+\\.svg$"
+    },
+    "correct_trajectory": {
+      "type": "object",
+      "description": "Ideal vehicle path through the maneuver.",
+      "required": ["keypoints", "path"],
+      "properties": {
+        "keypoints": {
+          "type": "array",
+          "description": "Labeled reference points on the diagram.",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["x", "y", "label"],
+            "properties": {
+              "x": { "type": "number" },
+              "y": { "type": "number" },
+              "label": { "type": "string", "minLength": 1 }
+            },
+            "additionalProperties": false
+          }
+        },
+        "path": {
+          "type": "array",
+          "description": "Sequence of (x, y) coordinates tracing the ideal path.",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "required": ["x", "y"],
+            "properties": {
+              "x": { "type": "number" },
+              "y": { "type": "number" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "wrong_trajectory": {
+      "type": "object",
+      "description": "Common failure path with explanation.",
+      "required": ["keypoints", "path", "failure_reason"],
+      "properties": {
+        "keypoints": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "type": "object",
+            "required": ["x", "y", "label"],
+            "properties": {
+              "x": { "type": "number" },
+              "y": { "type": "number" },
+              "label": { "type": "string", "minLength": 1 }
+            },
+            "additionalProperties": false
+          }
+        },
+        "path": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "required": ["x", "y"],
+            "properties": {
+              "x": { "type": "number" },
+              "y": { "type": "number" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "failure_reason": {
+          "type": "object",
+          "required": ["en", "pt"],
+          "properties": {
+            "en": { "type": "string", "minLength": 10 },
+            "pt": { "type": "string", "minLength": 10 }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "common_mistakes": {
+      "type": "object",
+      "description": "3-5 common mistakes per language.",
+      "required": ["en", "pt"],
+      "properties": {
+        "en": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 5,
+          "items": { "type": "string", "minLength": 10 }
+        },
+        "pt": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 5,
+          "items": { "type": "string", "minLength": 10 }
+        }
+      },
+      "additionalProperties": false
+    },
+    "checklist": {
+      "type": "array",
+      "description": "Sequential steps with text and pass criteria per language.",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["step", "text", "pass_criteria"],
+        "properties": {
+          "step": {
+            "type": "integer",
+            "description": "Step number (1-based).",
+            "minimum": 1
+          },
+          "text": {
+            "type": "object",
+            "required": ["en", "pt"],
+            "properties": {
+              "en": { "type": "string", "minLength": 5 },
+              "pt": { "type": "string", "minLength": 5 }
+            },
+            "additionalProperties": false
+          },
+          "pass_criteria": {
+            "type": "object",
+            "required": ["en", "pt"],
+            "properties": {
+              "en": { "type": "string", "minLength": 5 },
+              "pt": { "type": "string", "minLength": 5 }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "pro_tip": {
+      "type": "object",
+      "description": "One-sentence pro tip per language.",
+      "required": ["en", "pt"],
+      "properties": {
+        "en": { "type": "string", "minLength": 10 },
+        "pt": { "type": "string", "minLength": 10 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

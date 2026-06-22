@@ -1,0 +1,161 @@
+{
+  "id": 8,
+  "slug": "general-driving",
+  "name_en": "General Driving",
+  "name_pt": "Direcao Geral",
+  "sort_order": 8,
+  "overview": {
+    "en": "General driving covers all the routine maneuvers that occur between the specific obstacle tests on the course. This includes lane changes, wide turns at intersections, proper signal usage and cancellation, maintaining safe following distance, and continuous visual scanning. While the S-curve, crank, and parallel parking get individual attention, general driving errors accumulate quickly and can cost you the test through point deductions alone. The most common general driving failures involve signal cancellation after completing a turn, failing to check blind spots before lane changes, and not performing rear visual checks when reversing even for minor adjustments. Examiners deduct points for each missed mirror check, each forgotten signal cancellation, and each instance of improper lane positioning. The following distance rule requires maintaining at least two seconds behind the vehicle ahead, which examiners assess by observing your reaction to the car in front braking. Wide turns at intersections must use the correct lane and follow the proper arc without cutting corners. Signal usage must be activated at least three seconds before the maneuver and cancelled promptly after completion. Many candidates focus so hard on the obstacle maneuvers that they neglect these fundamentals, losing points steadily throughout the test. The general driving module ties together all the habits that separate a licensed driver from a test candidate.",
+    "pt": "A direcao geral cobre todas as manobras rotineiras que ocorrem entre os testes de obstaculos especificos no percurso. Isso inclui mudancas de faixa, curvas amplas em interseccoes, uso adequado de sinalizacao e cancelamento, manutencao de distancia segura de seguimento e varredura visual continua. Enquanto a curva em S, a curva de 90 e o estacionamento em paralelo recebem atencao individual, os erros de direcao geral se acumulam rapidamente e podem custar o teste apenas por deducoes de pontos. As falhas mais comuns de direcao geral envolvem cancelamento de sinalizacao apos completar uma curva, nao verificar pontos cegos antes de mudancas de faixa e nao realizar verificacoes visuais traseiras ao dar re mesmo para ajustes menores. Os examinadores deduzem pontos por cada verificacao de retrovisor perdida, cada cancelamento de sinalizacao esquecido e cada instancia de posicionamento inadequado na faixa. A regra de distancia de seguimento exige manter pelo menos dois segundos atras do veiculo a frente, o que os examinadores avaliam observando sua reacao ao carro da frente freando. Curvas amplas em interseccoes devem usar a faixa correta e seguir o arco adequado sem cortar caminhos. O uso de sinalizacao deve ser ativado pelo menos tres segundos antes da manobra e cancelado prontamente apos a conclusao. Muitos candidatos focam tanto nas manobras de obstaculo que negligenciam esses fundamentos, perdendo pontos constantemente durante o teste. O modulo de direcao geral conecta todos os habitos que separam um motorista licenciado de um candidato ao teste."
+  },
+  "svg_path": "assets/skill/general-driving-diagram.svg",
+  "correct_trajectory": {
+    "keypoints": [
+      { "x": 50, "y": 400, "label": "Straight driving" },
+      { "x": 100, "y": 400, "label": "Signal on" },
+      { "x": 120, "y": 400, "label": "Mirror check" },
+      { "x": 140, "y": 400, "label": "Blind spot check" },
+      { "x": 180, "y": 350, "label": "Lane change" },
+      { "x": 250, "y": 300, "label": "Signal cancel" },
+      { "x": 300, "y": 250, "label": "Wide turn" },
+      { "x": 400, "y": 200, "label": "Continue straight" }
+    ],
+    "path": [
+      { "x": 50, "y": 400 },
+      { "x": 70, "y": 400 },
+      { "x": 90, "y": 400 },
+      { "x": 100, "y": 400 },
+      { "x": 110, "y": 400 },
+      { "x": 120, "y": 400 },
+      { "x": 130, "y": 400 },
+      { "x": 140, "y": 400 },
+      { "x": 155, "y": 390 },
+      { "x": 170, "y": 375 },
+      { "x": 180, "y": 355 },
+      { "x": 190, "y": 340 },
+      { "x": 200, "y": 325 },
+      { "x": 220, "y": 315 },
+      { "x": 240, "y": 305 },
+      { "x": 250, "y": 300 },
+      { "x": 270, "y": 285 },
+      { "x": 285, "y": 265 },
+      { "x": 300, "y": 250 },
+      { "x": 330, "y": 235 },
+      { "x": 360, "y": 220 },
+      { "x": 400, "y": 200 }
+    ]
+  },
+  "wrong_trajectory": {
+    "keypoints": [
+      { "x": 50, "y": 400, "label": "Straight driving" },
+      { "x": 120, "y": 400, "label": "No signal" },
+      { "x": 140, "y": 400, "label": "No mirror check" },
+      { "x": 170, "y": 370, "label": "Abrupt lane change" },
+      { "x": 250, "y": 300, "label": "Signal not cancelled" },
+      { "x": 300, "y": 250, "label": "Cut corner on turn" },
+      { "x": 400, "y": 200, "label": "Multiple deductions" }
+    ],
+    "path": [
+      { "x": 50, "y": 400 },
+      { "x": 80, "y": 400 },
+      { "x": 110, "y": 400 },
+      { "x": 130, "y": 400 },
+      { "x": 145, "y": 395 },
+      { "x": 160, "y": 385 },
+      { "x": 170, "y": 370 },
+      { "x": 185, "y": 355 },
+      { "x": 200, "y": 340 },
+      { "x": 220, "y": 325 },
+      { "x": 240, "y": 310 },
+      { "x": 250, "y": 300 },
+      { "x": 270, "y": 285 },
+      { "x": 285, "y": 270 },
+      { "x": 295, "y": 255 },
+      { "x": 300, "y": 250 },
+      { "x": 330, "y": 235 },
+      { "x": 360, "y": 220 },
+      { "x": 400, "y": 200 }
+    ],
+    "failure_reason": {
+      "en": "The driver changes lanes without signaling or checking mirrors, leaves the turn signal blinking after completing the lane change, and cuts the corner on the intersection turn. These accumulated errors result in multiple point deductions that can fail the test even if all obstacle maneuvers are completed correctly.",
+      "pt": "O motorista muda de faixa sem sinalizar ou verificar retrovisores, deixa a seta piscando apos completar a mudanca de faixa e corta o canto na curva da intersecao. Esses erros acumulados resultam em multiplas deducoes de pontos que podem reprovar no teste mesmo que todas as manobras de obstaculo sejam completadas corretamente."
+    }
+  },
+  "common_mistakes": {
+    "en": [
+      "Changing lanes without signaling at least three seconds in advance",
+      "Forgetting to cancel the turn signal after completing a lane change or turn",
+      "Skipping the blind spot check before lane changes, relying only on mirrors",
+      "Cutting corners on wide turns instead of following the proper arc",
+      "Failing to perform rear visual checks when reversing, even for minor repositioning"
+    ],
+    "pt": [
+      "Mudar de faixa sem sinalizar pelo menos tres segundos de antecedencia",
+      "Esquecer de cancelar a seta apos completar uma mudanca de faixa ou curva",
+      "Pular a verificacao de ponto cego antes de mudancas de faixa, confiando apenas nos retrovisores",
+      "Cortar cantos em curvas amplas em vez de seguir o arco adequado",
+      "Nao realizar verificacoes visuais traseiras ao dar re, mesmo para reposicionamentos menores"
+    ]
+  },
+  "checklist": [
+    {
+      "step": 1,
+      "text": {
+        "en": "Activate turn signal at least three seconds before any lane change or turn",
+        "pt": "Ative a seta pelo menos tres segundos antes de qualquer mudanca de faixa ou curva"
+      },
+      "pass_criteria": {
+        "en": "Signal is audible and visible, activated well before the maneuver begins",
+        "pt": "Sinal e audivel e visivel, ativado bem antes da manobra comecar"
+      }
+    },
+    {
+      "step": 2,
+      "text": {
+        "en": "Check rearview mirror, side mirror, and blind spot before changing lanes",
+        "pt": "Verifique retrovisor central, retrovisor lateral e ponto cego antes de mudar de faixa"
+      },
+      "pass_criteria": {
+        "en": "All three checks performed with visible head movement, lane is clear",
+        "pt": "Todas as tres verificacoes realizadas com movimento visivel de cabeca, faixa esta livre"
+      }
+    },
+    {
+      "step": 3,
+      "text": {
+        "en": "Execute the lane change or turn smoothly, maintaining lane discipline",
+        "pt": "Execute a mudanca de faixa ou curva suavemente, mantendo disciplina de faixa"
+      },
+      "pass_criteria": {
+        "en": "Vehicle stays within lane markings throughout, no abrupt movements",
+        "pt": "Veiculo permanece dentro das marcas de faixa durante todo o percurso, sem movimentos bruscos"
+      }
+    },
+    {
+      "step": 4,
+      "text": {
+        "en": "Cancel the turn signal immediately after completing the maneuver",
+        "pt": "Cancele a seta imediatamente apos completar a manobra"
+      },
+      "pass_criteria": {
+        "en": "Signal is cancelled within two seconds of maneuver completion",
+        "pt": "Sinal e cancelado dentro de dois segundos apos a conclusao da manobra"
+      }
+    },
+    {
+      "step": 5,
+      "text": {
+        "en": "Maintain safe following distance and continuous visual scanning throughout",
+        "pt": "Mantenha distancia segura de seguimento e varredura visual continua durante todo o percurso"
+      },
+      "pass_criteria": {
+        "en": "Following distance is at least two seconds, eyes move between mirrors and road ahead",
+        "pt": "Distancia de seguimento e de pelo menos dois segundos, olhos se movem entre retrovisores e estrada a frente"
+      }
+    }
+  ],
+  "pro_tip": {
+    "en": "Signal cancellation is the most forgotten habit on the test, make it automatic by linking it to the moment you straighten the wheel.",
+    "pt": "O cancelamento da seta e o habito mais esquecido no teste, torne-o automatico vinculando-o ao momento em que endireita o volante."
+  }
+}

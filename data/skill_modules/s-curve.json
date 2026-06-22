@@ -1,0 +1,161 @@
+{
+  "id": 1,
+  "slug": "s-curve",
+  "name_en": "S-Curve",
+  "name_pt": "Curva em S",
+  "sort_order": 1,
+  "overview": {
+    "en": "The S-curve maneuver evaluates your ability to navigate two consecutive opposite-direction curves within a narrow corridor. This is one of the most frequently tested obstacles on the Japanese practical driving exam. The core challenge is managing inner-wheel difference, known as nairinsa in Japanese. When you turn the steering wheel, the rear wheels follow a tighter arc than the front wheels. If you steer too early or too sharply, the rear wheels will climb onto the curb, resulting in an immediate failure. Examiners watch for smooth steering input, proper speed control, and whether you stay centered in the lane throughout both curves. You are allowed a maximum of three corrections, meaning three times stopping and shifting between drive and reverse to reposition. Exceeding this limit ends the test. The course is approximately 30 meters long with a lane width of about 3.5 meters. Point deductions include five points for touching the curb and instant failure for mounting it or exceeding the correction limit. The key is to enter the first curve from the outer edge of the lane, giving the rear wheels maximum clearance on the inside of the turn.",
+    "pt": "A manobra de curva em S avalia sua capacidade de navegar duas curvas consecutivas em direcoes opostas dentro de um corredor estreito. Este e um dos obstaculos mais frequentemente testados no exame pratico de direcao japones. O desafio principal e gerenciar a diferenca de trajetoria das rodas traseiras, conhecida como nairinsa em japones. Quando voce gira o volante, as rodas traseiras seguem um arco mais fechado que as rodas dianteiras. Se voce esterçar muito cedo ou muito bruscamente, as rodas traseiras subirao no meio-fio, resultando em reprovacao imediata. Os examinadores observam a suavidade da direcao, o controle de velocidade e se voce permanece centralizado na faixa durante ambas as curvas. Sao permitidas no maximo tres correcoes, ou seja, tres vezes parar e mudar entre drive e re para se reposicionar. Exceder esse limite encerra o teste. O percurso tem aproximadamente 30 metros de comprimento com largura de faixa de cerca de 3,5 metros. As deducoes incluem cinco pontos por tocar no meio-fio e reprovacao imediata por subir nele ou exceder o limite de correcoes. A chave e entrar na primeira curva pela borda externa da faixa, dando as rodas traseiras a maxima folga no interior da curva."
+  },
+  "svg_path": "assets/skill/s-curve-diagram.svg",
+  "correct_trajectory": {
+    "keypoints": [
+      { "x": 50, "y": 450, "label": "Start" },
+      { "x": 50, "y": 350, "label": "Enter 1st curve" },
+      { "x": 150, "y": 250, "label": "Apex 1st curve" },
+      { "x": 250, "y": 200, "label": "Transition" },
+      { "x": 350, "y": 250, "label": "Apex 2nd curve" },
+      { "x": 450, "y": 350, "label": "Exit 2nd curve" },
+      { "x": 450, "y": 450, "label": "Finish" }
+    ],
+    "path": [
+      { "x": 50, "y": 450 },
+      { "x": 50, "y": 380 },
+      { "x": 60, "y": 340 },
+      { "x": 90, "y": 300 },
+      { "x": 130, "y": 265 },
+      { "x": 170, "y": 245 },
+      { "x": 210, "y": 235 },
+      { "x": 250, "y": 230 },
+      { "x": 290, "y": 235 },
+      { "x": 330, "y": 250 },
+      { "x": 370, "y": 275 },
+      { "x": 400, "y": 310 },
+      { "x": 425, "y": 350 },
+      { "x": 440, "y": 390 },
+      { "x": 450, "y": 430 },
+      { "x": 450, "y": 450 }
+    ]
+  },
+  "wrong_trajectory": {
+    "keypoints": [
+      { "x": 50, "y": 450, "label": "Start" },
+      { "x": 80, "y": 350, "label": "Steer too early" },
+      { "x": 120, "y": 280, "label": "Rear wheel hits curb" },
+      { "x": 200, "y": 220, "label": "Over-corrected" },
+      { "x": 300, "y": 260, "label": "Second curve miss" },
+      { "x": 400, "y": 350, "label": "Exit off-center" },
+      { "x": 450, "y": 450, "label": "Finish" }
+    ],
+    "path": [
+      { "x": 50, "y": 450 },
+      { "x": 65, "y": 400 },
+      { "x": 90, "y": 350 },
+      { "x": 110, "y": 310 },
+      { "x": 125, "y": 280 },
+      { "x": 140, "y": 260 },
+      { "x": 170, "y": 245 },
+      { "x": 210, "y": 230 },
+      { "x": 260, "y": 240 },
+      { "x": 310, "y": 260 },
+      { "x": 350, "y": 290 },
+      { "x": 380, "y": 330 },
+      { "x": 410, "y": 380 },
+      { "x": 430, "y": 420 },
+      { "x": 450, "y": 450 }
+    ],
+    "failure_reason": {
+      "en": "Steering into the first curve too early causes the rear wheels to cut inside and mount the curb. The driver then over-corrects, losing position for the second curve. This pattern typically uses up all three allowed corrections before completing the maneuver.",
+      "pt": "Esterçar para a primeira curva muito cedo faz as rodas traseiras cortarem por dentro e subirem no meio-fio. O motorista entao corrige demais, perdendo o posicionamento para a segunda curva. Esse padrao geralmente consome todas as tres correcoes permitidas antes de completar a manobra."
+    }
+  },
+  "common_mistakes": {
+    "en": [
+      "Entering the first curve from the center of the lane instead of the outer edge, leaving no margin for inner-wheel difference",
+      "Turning the steering wheel too sharply at the apex, causing rear wheels to climb the curb",
+      "Using all three allowed corrections before finishing the S-course",
+      "Accelerating through the curves instead of maintaining a steady crawl with clutch control",
+      "Failing to check side mirrors to monitor rear wheel position relative to the curb"
+    ],
+    "pt": [
+      "Entrar na primeira curva pelo centro da faixa em vez da borda externa, sem margem para a diferenca de trajetoria das rodas traseiras",
+      "Girar o volante muito bruscamente no apice, fazendo as rodas traseiras subirem no meio-fio",
+      "Usar todas as tres correcoes permitidas antes de terminar o percurso em S",
+      "Acelerar durante as curvas em vez de manter velocidade constante com controle de embreagem",
+      "Nao verificar os retrovisores laterais para monitorar a posicao das rodas traseiras em relacao ao meio-fio"
+    ]
+  },
+  "checklist": [
+    {
+      "step": 1,
+      "text": {
+        "en": "Approach the S-curve at a slow, steady speed in first or second gear",
+        "pt": "Aproxime-se da curva em S com velocidade lenta e constante em primeira ou segunda marcha"
+      },
+      "pass_criteria": {
+        "en": "Vehicle speed is walking pace or slower, engine RPM stable",
+        "pt": "Velocidade do veiculo igual ou menor que passo de caminhada, RPM do motor estavel"
+      }
+    },
+    {
+      "step": 2,
+      "text": {
+        "en": "Position the vehicle toward the outer edge of the lane before the first curve",
+        "pt": "Posicione o veiculo em direcao a borda externa da faixa antes da primeira curva"
+      },
+      "pass_criteria": {
+        "en": "Vehicle is within 30cm of the outer lane edge, centered laterally",
+        "pt": "Veiculo esta a ate 30cm da borda externa da faixa, centralizado lateralmente"
+      }
+    },
+    {
+      "step": 3,
+      "text": {
+        "en": "Begin steering smoothly as the front bumper reaches the curve entrance, not before",
+        "pt": "Comece a esterçar suavemente quando o para-choque dianteiro atingir a entrada da curva, nao antes"
+      },
+      "pass_criteria": {
+        "en": "Steering input is gradual, no sudden wheel movements",
+        "pt": "Esterçamento e gradual, sem movimentos bruscos no volante"
+      }
+    },
+    {
+      "step": 4,
+      "text": {
+        "en": "Monitor rear wheel clearance through side mirrors during both curves",
+        "pt": "Monitore a folga das rodas traseiras pelos retrovisores laterais durante ambas as curvas"
+      },
+      "pass_criteria": {
+        "en": "Rear wheels maintain at least 10cm clearance from the curb throughout",
+        "pt": "Rodas traseiras mantem pelo menos 10cm de folga do meio-fio durante todo o percurso"
+      }
+    },
+    {
+      "step": 5,
+      "text": {
+        "en": "Straighten the wheel at the transition point between the two curves",
+        "pt": "Endireite o volante no ponto de transicao entre as duas curvas"
+      },
+      "pass_criteria": {
+        "en": "Vehicle is centered in the lane at the midpoint, wheels straight",
+        "pt": "Veiculo esta centralizado na faixa no ponto medio, rodas retas"
+      }
+    },
+    {
+      "step": 6,
+      "text": {
+        "en": "Exit the second curve smoothly and accelerate only after clearing the course",
+        "pt": "Saia da segunda curva suavemente e acelere apenas apos liberar o percurso"
+      },
+      "pass_criteria": {
+        "en": "Vehicle exits centered, no curb contact, within correction limit",
+        "pt": "Veiculo sai centralizado, sem contato com meio-fio, dentro do limite de correcoes"
+      }
+    }
+  ],
+  "pro_tip": {
+    "en": "Think of the rear wheels as the ones that matter, not the front, since they are what will hit the curb first.",
+    "pt": "Pense nas rodas traseiras como as que importam, nao nas dianteiras, pois sao elas que vao atingir o meio-fio primeiro."
+  }
+}

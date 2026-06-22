@@ -1,0 +1,155 @@
+{
+  "id": 7,
+  "slug": "railroad-crossing",
+  "name_en": "Railroad Crossing",
+  "name_pt": "Cruzamento Ferroviario",
+  "sort_order": 7,
+  "overview": {
+    "en": "The railroad crossing is one of the most strictly enforced maneuvers on the Japanese driving test. You must come to a complete stop before the stop line or the crossing itself, look both ways along the tracks, listen for approaching trains, and only proceed when it is absolutely safe. Unlike regular intersections, there is no exception to the stop requirement. Even if the crossing gates are up and no warning lights are flashing, you must still stop and perform the full safety check. The procedure is: stop completely, open the window if needed to hear better, look left along the tracks, look right along the tracks, confirm no train is approaching, then proceed across without stopping on the tracks. Failing to stop at a railroad crossing results in instant failure. Stopping on the tracks themselves is also an instant fail. Examiners watch for the completeness of the visual check, whether the vehicle actually comes to a full stop, and whether the driver proceeds with appropriate caution. Many candidates fail because they perform a rolling stop instead of a complete halt, or because they rush across the tracks without confirming both directions. The crossing may have gates, lights, or neither, but the stop-and-check procedure remains the same regardless of the infrastructure present.",
+    "pt": "O cruzamento ferroviario e uma das manobras mais rigorosamente aplicadas no teste de direcao japones. Voce deve parar completamente antes da linha de parada ou da propria travessia, olhar para ambos os lados ao longo dos trilhos, ouvir por trens se aproximando e so prosseguir quando estiver absolutamente seguro. Diferente de interseccoes comuns, nao ha excecao para o requisito de parada. Mesmo que as cancelas estejam levantadas e nenhuma luz de aviso esteja piscando, voce ainda deve parar e realizar a verificacao de seguranca completa. O procedimento e: parar completamente, abrir a janela se necessario para ouvir melhor, olhar para a esquerda ao longo dos trilhos, olhar para a direita ao longo dos trilhos, confirmar que nenhum trem esta se aproximando, entao prosseguir sem parar nos trilhos. Nao parar em um cruzamento ferroviario resulta em reprovacao imediata. Parar nos proprios trilhos tambem e reprovacao imediata. Os examinadores observam a completude da verificacao visual, se o veiculo realmente para totalmente e se o motorista prossegue com precaucao adequada. Muitos candidatos falham porque fazem uma parada rolante em vez de uma parada completa, ou porque cruzam os trilhos rapidamente sem confirmar ambas as direcoes. A travessia pode ter cancelas, luzes ou nenhuma delas, mas o procedimento de parada e verificacao permanece o mesmo independentemente da infraestrutura presente."
+  },
+  "svg_path": "assets/skill/railroad-crossing-diagram.svg",
+  "correct_trajectory": {
+    "keypoints": [
+      { "x": 50, "y": 300, "label": "Approach" },
+      { "x": 120, "y": 300, "label": "Begin deceleration" },
+      { "x": 180, "y": 300, "label": "Stop line" },
+      { "x": 180, "y": 290, "label": "Full stop" },
+      { "x": 170, "y": 280, "label": "Look left" },
+      { "x": 190, "y": 280, "label": "Look right" },
+      { "x": 250, "y": 300, "label": "Cross tracks" },
+      { "x": 350, "y": 300, "label": "Clear crossing" }
+    ],
+    "path": [
+      { "x": 50, "y": 300 },
+      { "x": 70, "y": 300 },
+      { "x": 90, "y": 300 },
+      { "x": 110, "y": 300 },
+      { "x": 130, "y": 300 },
+      { "x": 150, "y": 300 },
+      { "x": 170, "y": 300 },
+      { "x": 180, "y": 300 },
+      { "x": 180, "y": 295 },
+      { "x": 180, "y": 290 },
+      { "x": 180, "y": 295 },
+      { "x": 180, "y": 300 },
+      { "x": 200, "y": 300 },
+      { "x": 220, "y": 300 },
+      { "x": 240, "y": 300 },
+      { "x": 260, "y": 300 },
+      { "x": 290, "y": 300 },
+      { "x": 320, "y": 300 },
+      { "x": 350, "y": 300 }
+    ]
+  },
+  "wrong_trajectory": {
+    "keypoints": [
+      { "x": 50, "y": 300, "label": "Approach" },
+      { "x": 150, "y": 300, "label": "Rolling stop" },
+      { "x": 180, "y": 300, "label": "No full stop" },
+      { "x": 200, "y": 300, "label": "No head check" },
+      { "x": 230, "y": 300, "label": "On the tracks" },
+      { "x": 260, "y": 300, "label": "Stops on tracks" },
+      { "x": 350, "y": 300, "label": "Failed" }
+    ],
+    "path": [
+      { "x": 50, "y": 300 },
+      { "x": 80, "y": 300 },
+      { "x": 110, "y": 300 },
+      { "x": 140, "y": 300 },
+      { "x": 160, "y": 300 },
+      { "x": 175, "y": 300 },
+      { "x": 185, "y": 300 },
+      { "x": 200, "y": 300 },
+      { "x": 220, "y": 300 },
+      { "x": 240, "y": 300 },
+      { "x": 255, "y": 300 },
+      { "x": 260, "y": 300 },
+      { "x": 265, "y": 300 },
+      { "x": 280, "y": 300 },
+      { "x": 310, "y": 300 },
+      { "x": 350, "y": 300 }
+    ],
+    "failure_reason": {
+      "en": "The driver performs a rolling stop instead of a complete halt at the stop line. No head check is performed to look along the tracks. The vehicle then stops on the tracks themselves, which is an instant failure regardless of whether a train is approaching.",
+      "pt": "O motorista faz uma parada rolante em vez de uma parada completa na linha de parada. Nenhuma verificacao com a cabeca e realizada para olhar ao longo dos trilhos. O veiculo entao para nos proprios trilhos, o que e reprovacao imediata independentemente de um trem estar se aproximando."
+    }
+  },
+  "common_mistakes": {
+    "en": [
+      "Performing a rolling stop instead of coming to a complete halt before the crossing",
+      "Failing to look both ways along the tracks with a visible head turn",
+      "Stopping on the railroad tracks instead of clearing them in one continuous movement",
+      "Not opening the window to listen for trains when ambient noise is high",
+      "Proceeding across the tracks while the warning lights are still flashing or gates are descending"
+    ],
+    "pt": [
+      "Fazer uma parada rolante em vez de parar completamente antes da travessia",
+      "Nao olhar para ambos os lados ao longo dos trilhos com um giro visivel de cabeca",
+      "Parar nos trilhos da ferrovia em vez de libera-los em um movimento continuo",
+      "Nao abrir a janela para ouvir trens quando o ruido ambiente e alto",
+      "Prosseguir pelos trilhos enquanto as luzes de aviso ainda estao piscando ou as cancelas estao descendo"
+    ]
+  },
+  "checklist": [
+    {
+      "step": 1,
+      "text": {
+        "en": "Begin decelerating as the railroad crossing comes into view",
+        "pt": "Comece a desacelerar quando o cruzamento ferroviario ficar visivel"
+      },
+      "pass_criteria": {
+        "en": "Speed reduction begins well before the stop line",
+        "pt": "Reducao de velocidade comeca bem antes da linha de parada"
+      }
+    },
+    {
+      "step": 2,
+      "text": {
+        "en": "Come to a complete stop before the stop line or crossing boundary",
+        "pt": "Pare completamente antes da linha de parada ou limite da travessia"
+      },
+      "pass_criteria": {
+        "en": "Vehicle is fully stationary, speedometer reads zero",
+        "pt": "Veiculo esta totalmente estacionario, velocimetro marca zero"
+      }
+    },
+    {
+      "step": 3,
+      "text": {
+        "en": "Look left along the tracks, then right, with visible head movement",
+        "pt": "Olhe para a esquerda ao longo dos trilhos, entao para a direita, com movimento visivel de cabeca"
+      },
+      "pass_criteria": {
+        "en": "Head turns are clearly visible, both directions checked",
+        "pt": "Giros de cabeca sao claramente visiveis, ambas as direcoes verificadas"
+      }
+    },
+    {
+      "step": 4,
+      "text": {
+        "en": "Listen for approaching trains, open window if necessary",
+        "pt": "Ouca por trens se aproximando, abra a janela se necessario"
+      },
+      "pass_criteria": {
+        "en": "Window opened or head tilted to listen, no train detected",
+        "pt": "Janela aberta ou cabeca inclinada para ouvir, nenhum trem detectado"
+      }
+    },
+    {
+      "step": 5,
+      "text": {
+        "en": "Proceed across the tracks in one continuous movement without stopping on them",
+        "pt": "Prossiga pelos trilhos em um movimento continuo sem parar neles"
+      },
+      "pass_criteria": {
+        "en": "Vehicle crosses tracks without stopping, clears the crossing completely",
+        "pt": "Veiculo cruza os trilhos sem parar, libera a travessia completamente"
+      }
+    }
+  ],
+  "pro_tip": {
+    "en": "Treat every railroad crossing as if a train could appear at any moment, because the examiner is watching for the stop-and-check ritual, not just whether a train is actually there.",
+    "pt": "Trate todo cruzamento ferroviario como se um trem pudesse aparecer a qualquer momento, porque o examinador esta observando o ritual de parada e verificacao, nao apenas se um trem esta realmente la."
+  }
+}

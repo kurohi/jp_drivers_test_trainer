@@ -10,33 +10,115 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as TeacherIndexRouteImport } from './routes/teacher/index'
+import { Route as StudyIndexRouteImport } from './routes/study/index'
+import { Route as SkillTestIndexRouteImport } from './routes/skill-test/index'
+import { Route as SettingsIndexRouteImport } from './routes/settings/index'
+import { Route as PlanIndexRouteImport } from './routes/plan/index'
+import { Route as MockTestIndexRouteImport } from './routes/mock-test/index'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TeacherIndexRoute = TeacherIndexRouteImport.update({
+  id: '/teacher/',
+  path: '/teacher/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StudyIndexRoute = StudyIndexRouteImport.update({
+  id: '/study/',
+  path: '/study/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SkillTestIndexRoute = SkillTestIndexRouteImport.update({
+  id: '/skill-test/',
+  path: '/skill-test/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SettingsIndexRoute = SettingsIndexRouteImport.update({
+  id: '/settings/',
+  path: '/settings/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlanIndexRoute = PlanIndexRouteImport.update({
+  id: '/plan/',
+  path: '/plan/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MockTestIndexRoute = MockTestIndexRouteImport.update({
+  id: '/mock-test/',
+  path: '/mock-test/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/mock-test/': typeof MockTestIndexRoute
+  '/plan/': typeof PlanIndexRoute
+  '/settings/': typeof SettingsIndexRoute
+  '/skill-test/': typeof SkillTestIndexRoute
+  '/study/': typeof StudyIndexRoute
+  '/teacher/': typeof TeacherIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/mock-test': typeof MockTestIndexRoute
+  '/plan': typeof PlanIndexRoute
+  '/settings': typeof SettingsIndexRoute
+  '/skill-test': typeof SkillTestIndexRoute
+  '/study': typeof StudyIndexRoute
+  '/teacher': typeof TeacherIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/mock-test/': typeof MockTestIndexRoute
+  '/plan/': typeof PlanIndexRoute
+  '/settings/': typeof SettingsIndexRoute
+  '/skill-test/': typeof SkillTestIndexRoute
+  '/study/': typeof StudyIndexRoute
+  '/teacher/': typeof TeacherIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/mock-test/'
+    | '/plan/'
+    | '/settings/'
+    | '/skill-test/'
+    | '/study/'
+    | '/teacher/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/mock-test'
+    | '/plan'
+    | '/settings'
+    | '/skill-test'
+    | '/study'
+    | '/teacher'
+  id:
+    | '__root__'
+    | '/'
+    | '/mock-test/'
+    | '/plan/'
+    | '/settings/'
+    | '/skill-test/'
+    | '/study/'
+    | '/teacher/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  MockTestIndexRoute: typeof MockTestIndexRoute
+  PlanIndexRoute: typeof PlanIndexRoute
+  SettingsIndexRoute: typeof SettingsIndexRoute
+  SkillTestIndexRoute: typeof SkillTestIndexRoute
+  StudyIndexRoute: typeof StudyIndexRoute
+  TeacherIndexRoute: typeof TeacherIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +130,59 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/teacher/': {
+      id: '/teacher/'
+      path: '/teacher'
+      fullPath: '/teacher/'
+      preLoaderRoute: typeof TeacherIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/study/': {
+      id: '/study/'
+      path: '/study'
+      fullPath: '/study/'
+      preLoaderRoute: typeof StudyIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/skill-test/': {
+      id: '/skill-test/'
+      path: '/skill-test'
+      fullPath: '/skill-test/'
+      preLoaderRoute: typeof SkillTestIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/settings/': {
+      id: '/settings/'
+      path: '/settings'
+      fullPath: '/settings/'
+      preLoaderRoute: typeof SettingsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/plan/': {
+      id: '/plan/'
+      path: '/plan'
+      fullPath: '/plan/'
+      preLoaderRoute: typeof PlanIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mock-test/': {
+      id: '/mock-test/'
+      path: '/mock-test'
+      fullPath: '/mock-test/'
+      preLoaderRoute: typeof MockTestIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  MockTestIndexRoute: MockTestIndexRoute,
+  PlanIndexRoute: PlanIndexRoute,
+  SettingsIndexRoute: SettingsIndexRoute,
+  SkillTestIndexRoute: SkillTestIndexRoute,
+  StudyIndexRoute: StudyIndexRoute,
+  TeacherIndexRoute: TeacherIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

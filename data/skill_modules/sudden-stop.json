@@ -1,0 +1,149 @@
+{
+  "id": 5,
+  "slug": "sudden-stop",
+  "name_en": "Sudden Stop",
+  "name_pt": "Parada Brusca",
+  "sort_order": 5,
+  "overview": {
+    "en": "The sudden stop maneuver tests your emergency braking response and vehicle control under pressure. During the test, the examiner will give an unexpected signal, usually by tapping the dashboard or calling out, and you must bring the vehicle to a complete stop as quickly and safely as possible. This evaluates reaction time, braking technique, and whether you maintain awareness of your surroundings while stopping. The key is to brake firmly and progressively, not to slam the pedal. Examiners look for proper foot placement on the brake, simultaneous clutch depression to prevent stalling, and checking the rearview mirror before braking to assess following traffic. A common mistake is braking so hard that the wheels lock up, causing the vehicle to skid. Another is forgetting to depress the clutch, which stalls the engine and leaves you stranded in the middle of the road. After coming to a complete stop, you must also check for hazards before proceeding. The sudden stop is not about stopping in the shortest distance possible, it is about stopping safely while maintaining control. Point deductions apply for delayed reaction, harsh braking that causes loss of control, failing to check mirrors, or not depressing the clutch in time.",
+    "pt": "A manobra de parada brusca testa sua resposta de frenagem de emergencia e controle do veiculo sob pressao. Durante o teste, o examinador dara um sinal inesperado, geralmente batendo no painel ou chamando em voz alta, e voce deve trazer o veiculo a uma parada completa o mais rapido e seguro possivel. Isso avalia tempo de reacao, tecnica de frenagem e se voce mantem consciencia do entorno enquanto para. A chave e frear com firmeza e progressividade, nao pisar fundo no pedal. Os examinadores observam o posicionamento correto do pe no freio, depressao simultanea da embreagem para evitar morrer, e verificar o retrovisor antes de frear para avaliar o trafego atras. Um erro comum e frear com tanta forca que as rodas travam, fazendo o veiculo derrapar. Outro e esquecer de pressionar a embreagem, o que morre o motor e deixa voce parado no meio da estrada. Apos parar completamente, voce tambem deve verificar perigos antes de prosseguir. A parada brusca nao e sobre parar na menor distancia possivel, e sobre parar com seguranca mantendo o controle. Deducoes de pontos se aplicam por reacao tardia, frenagem brusca que causa perda de controle, nao verificar retrovisores ou nao pressionar a embreagem a tempo."
+  },
+  "svg_path": "assets/skill/sudden-stop-diagram.svg",
+  "correct_trajectory": {
+    "keypoints": [
+      { "x": 50, "y": 300, "label": "Cruising speed" },
+      { "x": 150, "y": 300, "label": "Signal received" },
+      { "x": 160, "y": 300, "label": "Check rear mirror" },
+      { "x": 180, "y": 300, "label": "Brake + clutch" },
+      { "x": 250, "y": 300, "label": "Firm braking" },
+      { "x": 320, "y": 300, "label": "Complete stop" },
+      { "x": 350, "y": 300, "label": "Check hazards" }
+    ],
+    "path": [
+      { "x": 50, "y": 300 },
+      { "x": 80, "y": 300 },
+      { "x": 110, "y": 300 },
+      { "x": 140, "y": 300 },
+      { "x": 150, "y": 300 },
+      { "x": 160, "y": 300 },
+      { "x": 180, "y": 300 },
+      { "x": 200, "y": 300 },
+      { "x": 220, "y": 300 },
+      { "x": 240, "y": 300 },
+      { "x": 260, "y": 300 },
+      { "x": 280, "y": 300 },
+      { "x": 300, "y": 300 },
+      { "x": 320, "y": 300 },
+      { "x": 350, "y": 300 }
+    ]
+  },
+  "wrong_trajectory": {
+    "keypoints": [
+      { "x": 50, "y": 300, "label": "Cruising speed" },
+      { "x": 150, "y": 300, "label": "Signal received" },
+      { "x": 170, "y": 300, "label": "Delayed reaction" },
+      { "x": 200, "y": 300, "label": "Slam brake, no clutch" },
+      { "x": 240, "y": 300, "label": "Wheels lock, skid" },
+      { "x": 280, "y": 300, "label": "Engine stalls" },
+      { "x": 320, "y": 300, "label": "Uncontrolled stop" }
+    ],
+    "path": [
+      { "x": 50, "y": 300 },
+      { "x": 80, "y": 300 },
+      { "x": 110, "y": 300 },
+      { "x": 140, "y": 300 },
+      { "x": 150, "y": 300 },
+      { "x": 165, "y": 300 },
+      { "x": 180, "y": 300 },
+      { "x": 200, "y": 300 },
+      { "x": 220, "y": 300 },
+      { "x": 235, "y": 300 },
+      { "x": 250, "y": 300 },
+      { "x": 265, "y": 300 },
+      { "x": 280, "y": 300 },
+      { "x": 300, "y": 300 },
+      { "x": 320, "y": 300 }
+    ],
+    "failure_reason": {
+      "en": "The driver reacts too slowly to the signal, then slams the brake without depressing the clutch. The wheels lock up, causing a skid, and the engine stalls. The vehicle stops in an uncontrolled manner with no mirror check for following traffic.",
+      "pt": "O motorista reage muito devagar ao sinal, entao pisa fundo no freio sem pressionar a embreagem. As rodas travam, causando uma derrapagem, e o motor morre. O veiculo para de forma descontrolada sem verificar retrovisor para trafego atras."
+    }
+  },
+  "common_mistakes": {
+    "en": [
+      "Hesitating or delaying the braking response after the examiner gives the signal",
+      "Slamming the brake pedal instead of applying firm, progressive pressure",
+      "Forgetting to depress the clutch, causing the engine to stall during the stop",
+      "Not checking the rearview mirror before braking to assess traffic behind",
+      "Releasing the brake too quickly after stopping instead of holding until it is safe to proceed"
+    ],
+    "pt": [
+      "Hesitar ou atrasar a resposta de frenagem apos o examinador dar o sinal",
+      "Pisar fundo no pedal do freio em vez de aplicar pressao firme e progressiva",
+      "Esquecer de pressionar a embreagem, fazendo o motor morrer durante a parada",
+      "Nao verificar o retrovisor antes de frear para avaliar o trafego atras",
+      "Soltar o freio muito rapido apos parar em vez de manter ate que seja seguro prosseguir"
+    ]
+  },
+  "checklist": [
+    {
+      "step": 1,
+      "text": {
+        "en": "React immediately to the examiner signal by checking the rearview mirror",
+        "pt": "Reaja imediatamente ao sinal do examinador verificando o retrovisor"
+      },
+      "pass_criteria": {
+        "en": "Mirror check is visible, reaction time under one second",
+        "pt": "Verificacao do retrovisor e visivel, tempo de reacao abaixo de um segundo"
+      }
+    },
+    {
+      "step": 2,
+      "text": {
+        "en": "Apply firm, progressive pressure to the brake pedal while simultaneously depressing the clutch",
+        "pt": "Aplique pressao firme e progressiva no pedal do freio enquanto pressiona simultaneamente a embreagem"
+      },
+      "pass_criteria": {
+        "en": "Braking is smooth but firm, clutch is fully depressed before engine RPM drops too low",
+        "pt": "Frenagem e suave mas firme, embreagem totalmente pressionada antes que RPM do motor caia demais"
+      }
+    },
+    {
+      "step": 3,
+      "text": {
+        "en": "Maintain steering control and keep the vehicle in a straight line during braking",
+        "pt": "Mantenha controle de direcao e mantenha o veiculo em linha reta durante a frenagem"
+      },
+      "pass_criteria": {
+        "en": "Vehicle does not swerve, wheels do not lock, no skidding",
+        "pt": "Veiculo nao desvia, rodas nao travam, sem derrapagem"
+      }
+    },
+    {
+      "step": 4,
+      "text": {
+        "en": "Come to a complete stop and hold the brake pedal down",
+        "pt": "Pare completamente e mantenha o pedal do freio pressionado"
+      },
+      "pass_criteria": {
+        "en": "Vehicle is fully stopped, brake pedal held, engine running",
+        "pt": "Veiculo esta totalmente parado, pedal do freio mantido, motor funcionando"
+      }
+    },
+    {
+      "step": 5,
+      "text": {
+        "en": "Check all mirrors and blind spots before proceeding when instructed",
+        "pt": "Verifique todos os retrovisores e pontos cegos antes de prosseguir quando instruido"
+      },
+      "pass_criteria": {
+        "en": "Full visual check performed, vehicle proceeds only when safe",
+        "pt": "Verificacao visual completa realizada, veiculo prossegue apenas quando seguro"
+      }
+    }
+  ],
+  "pro_tip": {
+    "en": "Brake with your whole foot, not just your toes, so you can modulate pressure and avoid locking the wheels.",
+    "pt": "Freie com o pe inteiro, nao apenas com os dedos, para poder modular a pressao e evitar travar as rodas."
+  }
+}

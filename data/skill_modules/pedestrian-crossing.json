@@ -1,0 +1,153 @@
+{
+  "id": 6,
+  "slug": "pedestrian-crossing",
+  "name_en": "Pedestrian Crossing",
+  "name_pt": "Travessia de Pedestres",
+  "sort_order": 6,
+  "overview": {
+    "en": "The pedestrian crossing maneuver evaluates your awareness and response to crosswalks, which are among the highest-priority safety items on the Japanese driving test. Examiners expect you to demonstrate a systematic approach every time you approach a marked crosswalk, regardless of whether pedestrians are visible. The required sequence is: reduce speed, check both sides of the crossing, and be prepared to stop. Even if no one is crossing, you must visibly slow down and perform the head-check motion. Failing to slow down at a crosswalk results in instant failure, as does failing to stop when a pedestrian is present or about to cross. The test course includes multiple crosswalks, and examiners may place a simulated pedestrian or use a signal to test your response. Point deductions apply for not reducing speed, not checking left and right, or proceeding when a pedestrian has the right of way. The cultural context matters here: in Japan, pedestrian priority is taken extremely seriously, and examiners will not overlook even minor lapses in crosswalk protocol. Many candidates fail because they treat empty crosswalks as optional checks rather than mandatory safety procedures.",
+    "pt": "A manobra de travessia de pedestres avalia sua consciencia e resposta a faixas de pedestres, que estao entre os itens de seguranca de maior prioridade no teste de direcao japones. Os examinadores esperam que voce demonstre uma abordagem sistematica toda vez que se aproximar de uma faixa marcada, independentemente de pedestres estarem visiveis. A sequencia exigida e: reduzir velocidade, verificar ambos os lados da travessia e estar preparado para parar. Mesmo que ninguem esteja atravessando, voce deve visivelmente desacelerar e realizar o movimento de verificacao com a cabeca. Nao desacelerar em uma faixa resulta em reprovacao imediata, assim como nao parar quando um pedestre esta presente ou prestes a atravessar. O percurso de teste inclui multiplas faixas de pedestres, e os examinadores podem colocar um pedestre simulado ou usar um sinal para testar sua resposta. Deducoes de pontos se aplicam por nao reduzir velocidade, nao verificar esquerda e direita, ou prosseguir quando um pedestre tem a preferencia. O contexto cultural importa aqui: no Japao, a prioridade do pedestre e levada extremamente a serio, e os examinadores nao vao ignorar mesmo pequenas falhas no protocolo de faixa. Muitos candidatos falham porque tratam faixas vazias como verificacoes opcionais em vez de procedimentos de seguranca obrigatorios."
+  },
+  "svg_path": "assets/skill/pedestrian-crossing-diagram.svg",
+  "correct_trajectory": {
+    "keypoints": [
+      { "x": 50, "y": 300, "label": "Approach" },
+      { "x": 120, "y": 300, "label": "Begin deceleration" },
+      { "x": 180, "y": 300, "label": "Check left" },
+      { "x": 200, "y": 300, "label": "Check right" },
+      { "x": 220, "y": 300, "label": "Stop line" },
+      { "x": 280, "y": 300, "label": "Clear crossing" },
+      { "x": 350, "y": 300, "label": "Resume speed" }
+    ],
+    "path": [
+      { "x": 50, "y": 300 },
+      { "x": 70, "y": 300 },
+      { "x": 90, "y": 300 },
+      { "x": 110, "y": 300 },
+      { "x": 130, "y": 300 },
+      { "x": 150, "y": 300 },
+      { "x": 170, "y": 300 },
+      { "x": 180, "y": 300 },
+      { "x": 190, "y": 300 },
+      { "x": 200, "y": 300 },
+      { "x": 210, "y": 300 },
+      { "x": 220, "y": 300 },
+      { "x": 240, "y": 300 },
+      { "x": 260, "y": 300 },
+      { "x": 280, "y": 300 },
+      { "x": 310, "y": 300 },
+      { "x": 350, "y": 300 }
+    ]
+  },
+  "wrong_trajectory": {
+    "keypoints": [
+      { "x": 50, "y": 300, "label": "Approach at speed" },
+      { "x": 150, "y": 300, "label": "No deceleration" },
+      { "x": 200, "y": 300, "label": "No head check" },
+      { "x": 220, "y": 300, "label": "Cross stop line" },
+      { "x": 250, "y": 300, "label": "Pedestrian present" },
+      { "x": 280, "y": 300, "label": "Late brake" },
+      { "x": 350, "y": 300, "label": "Failed" }
+    ],
+    "path": [
+      { "x": 50, "y": 300 },
+      { "x": 80, "y": 300 },
+      { "x": 110, "y": 300 },
+      { "x": 140, "y": 300 },
+      { "x": 170, "y": 300 },
+      { "x": 190, "y": 300 },
+      { "x": 200, "y": 300 },
+      { "x": 210, "y": 300 },
+      { "x": 220, "y": 300 },
+      { "x": 230, "y": 300 },
+      { "x": 240, "y": 300 },
+      { "x": 250, "y": 300 },
+      { "x": 260, "y": 300 },
+      { "x": 270, "y": 300 },
+      { "x": 280, "y": 300 },
+      { "x": 310, "y": 300 },
+      { "x": 350, "y": 300 }
+    ],
+    "failure_reason": {
+      "en": "The driver approaches the crosswalk at normal speed without decelerating or performing head checks. A pedestrian is present, and the late braking response means the vehicle crosses the stop line before stopping. This is an instant failure for not yielding to a pedestrian.",
+      "pt": "O motorista se aproxima da faixa em velocidade normal sem desacelerar ou realizar verificacoes com a cabeca. Um pedestre esta presente, e a resposta tardia de frenagem significa que o veiculo cruza a linha de parada antes de parar. Isso e reprovacao imediata por nao dar preferencia a um pedestre."
+    }
+  },
+  "common_mistakes": {
+    "en": [
+      "Approaching a crosswalk at normal speed without visible deceleration",
+      "Skipping the left-and-right head check when no pedestrians are visible",
+      "Stopping past the stop line instead of before it",
+      "Proceeding through the crosswalk before a pedestrian has fully cleared the lane",
+      "Failing to anticipate pedestrians who may step onto the crossing from behind obstacles"
+    ],
+    "pt": [
+      "Aproximar-se de uma faixa em velocidade normal sem desaceleracao visivel",
+      "Pular a verificacao com a cabeca para esquerda e direita quando nenhum pedestre esta visivel",
+      "Parar alem da linha de parada em vez de antes dela",
+      "Prosseguir pela faixa antes que um pedestre tenha liberado completamente a faixa",
+      "Nao antecipar pedestres que podem entrar na travessia atras de obstaculos"
+    ]
+  },
+  "checklist": [
+    {
+      "step": 1,
+      "text": {
+        "en": "Begin decelerating as soon as the crosswalk becomes visible ahead",
+        "pt": "Comece a desacelerar assim que a faixa se tornar visivel a frente"
+      },
+      "pass_criteria": {
+        "en": "Speed reduction is noticeable, foot moves toward brake pedal",
+        "pt": "Reducao de velocidade e notavel, pe se move em direcao ao pedal do freio"
+      }
+    },
+    {
+      "step": 2,
+      "text": {
+        "en": "Turn head to check the left side of the crosswalk for pedestrians",
+        "pt": "Gire a cabeca para verificar o lado esquerdo da faixa para pedestres"
+      },
+      "pass_criteria": {
+        "en": "Head turn is visible to examiner, eyes scan the crossing area",
+        "pt": "Giro de cabeca e visivel ao examinador, olhos escaneam a area de travessia"
+      }
+    },
+    {
+      "step": 3,
+      "text": {
+        "en": "Turn head to check the right side of the crosswalk for pedestrians",
+        "pt": "Gire a cabeca para verificar o lado direito da faixa para pedestres"
+      },
+      "pass_criteria": {
+        "en": "Head turn is visible to examiner, both sides checked",
+        "pt": "Giro de cabeca e visivel ao examinador, ambos os lados verificados"
+      }
+    },
+    {
+      "step": 4,
+      "text": {
+        "en": "Stop before the stop line if any pedestrian is present or approaching the crossing",
+        "pt": "Pare antes da linha de parada se algum pedestre estiver presente ou se aproximando da travessia"
+      },
+      "pass_criteria": {
+        "en": "Vehicle stops before the line, pedestrian has right of way",
+        "pt": "Veiculo para antes da linha, pedestre tem preferencia"
+      }
+    },
+    {
+      "step": 5,
+      "text": {
+        "en": "Proceed only when the crosswalk is fully clear and no pedestrians are approaching",
+        "pt": "Prossiga apenas quando a faixa estiver totalmente livre e nenhum pedestre se aproximando"
+      },
+      "pass_criteria": {
+        "en": "Crossing is completely clear, vehicle accelerates smoothly after confirmation",
+        "pt": "Travessia esta completamente livre, veiculo acelera suavemente apos confirmacao"
+      }
+    }
+  ],
+  "pro_tip": {
+    "en": "Always slow down at every crosswalk even if it looks empty, because the examiner is grading the habit, not just the outcome.",
+    "pt": "Sempre desacelere em toda faixa mesmo que pareca vazia, porque o examinador esta avaliando o habito, nao apenas o resultado."
+  }
+}

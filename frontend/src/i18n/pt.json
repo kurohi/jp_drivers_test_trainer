@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Início",
+    "study": "Estudo",
+    "mockTest": "Simulado",
+    "skillTest": "Teste de Habilidade",
+    "teacher": "Professor",
+    "plan": "Plano",
+    "settings": "Configurações"
+  },
+  "pageTitle": {
+    "home": "Painel",
+    "study": "Estudo",
+    "mockTest": "Simulado",
+    "skillTest": "Teste de Habilidade",
+    "teacher": "Professor",
+    "plan": "Plano de Estudo",
+    "settings": "Configurações"
+  },
+  "common": {
+    "buttons": {
+      "start": "Iniciar",
+      "submit": "Enviar",
+      "cancel": "Cancelar",
+      "back": "Voltar",
+      "next": "Próximo",
+      "previous": "Anterior",
+      "confirm": "Confirmar",
+      "showExplanation": "Mostrar explicação"
+    },
+    "difficulty": {
+      "beginner": "Iniciante",
+      "easy": "Fácil",
+      "standard": "Padrão",
+      "hard": "Difícil",
+      "expert": "Especialista"
+    }
+  }
+}

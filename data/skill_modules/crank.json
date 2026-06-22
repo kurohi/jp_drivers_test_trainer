@@ -1,0 +1,147 @@
+{
+  "id": 2,
+  "slug": "crank",
+  "name_en": "Crank",
+  "name_pt": "Curva de 90 Graus",
+  "sort_order": 2,
+  "overview": {
+    "en": "The crank maneuver tests your ability to execute sharp 90-degree turns in an extremely confined space. Unlike the S-curve, which features gradual bends, the crank requires you to pivot the vehicle almost on the spot while navigating a narrow L-shaped corridor. The lane width is typically around 3.5 meters, barely wider than the vehicle itself. Inner-wheel difference is the primary hazard here. When you initiate a 90-degree turn, the rear wheels track significantly inside the front wheels path. If you do not account for this, the rear wheels will strike the inner corner of the crank. The examiners evaluate whether you perform a visual check behind the vehicle before beginning the turn, whether you use the full width of the available lane, and whether you complete the turn without exceeding three corrections. A common trap is focusing only on the front of the car and forgetting that the rear end swings wide before cutting in. Point deductions mirror the S-curve: five points for touching the boundary lines, instant failure for crossing them or exhausting your corrections. The crank often appears immediately after the S-curve on the test course, so fatigue and rushing are real risks.",
+    "pt": "A manobra de curva de 90 graus testa sua capacidade de executar curvas fechadas em um espaco extremamente confinado. Diferente da curva em S, que possui curvas graduais, a curva de 90 exige que voce gire o veiculo quase no lugar enquanto navega um corredor estreito em forma de L. A largura da faixa e tipicamente em torno de 3,5 metros, pouco mais larga que o proprio veiculo. A diferenca de trajetoria das rodas traseiras e o principal perigo aqui. Quando voce inicia uma curva de 90 graus, as rodas traseiras percorrem um caminho significativamente mais interno que as rodas dianteiras. Se voce nao considerar isso, as rodas traseiras vao atingir o canto interno da curva. Os examinadores avaliam se voce faz uma verificacao visual atras do veiculo antes de iniciar a curva, se usa toda a largura disponivel da faixa e se completa a curva sem exceder tres correcoes. Uma armadilha comum e focar apenas na frente do carro e esquecer que a traseira balanca para fora antes de cortar para dentro. As deducoes sao similares a curva em S: cinco pontos por tocar nas linhas limite, reprovacao imediata por cruza-las ou esgotar as correcoes. A curva de 90 frequentemente aparece logo apos a curva em S no percurso de teste, entao cansaco e pressa sao riscos reais."
+  },
+  "svg_path": "assets/skill/crank-diagram.svg",
+  "correct_trajectory": {
+    "keypoints": [
+      { "x": 50, "y": 450, "label": "Approach" },
+      { "x": 50, "y": 300, "label": "Stop & check rear" },
+      { "x": 50, "y": 250, "label": "Outer edge position" },
+      { "x": 100, "y": 200, "label": "Begin 90 turn" },
+      { "x": 200, "y": 150, "label": "Apex of turn" },
+      { "x": 300, "y": 150, "label": "Straighten out" },
+      { "x": 450, "y": 150, "label": "Exit" }
+    ],
+    "path": [
+      { "x": 50, "y": 450 },
+      { "x": 50, "y": 380 },
+      { "x": 50, "y": 320 },
+      { "x": 50, "y": 270 },
+      { "x": 55, "y": 240 },
+      { "x": 70, "y": 215 },
+      { "x": 95, "y": 195 },
+      { "x": 130, "y": 175 },
+      { "x": 170, "y": 160 },
+      { "x": 210, "y": 152 },
+      { "x": 260, "y": 150 },
+      { "x": 320, "y": 150 },
+      { "x": 380, "y": 150 },
+      { "x": 450, "y": 150 }
+    ]
+  },
+  "wrong_trajectory": {
+    "keypoints": [
+      { "x": 50, "y": 450, "label": "Approach" },
+      { "x": 80, "y": 300, "label": "No rear check" },
+      { "x": 100, "y": 250, "label": "Turn from center" },
+      { "x": 130, "y": 200, "label": "Rear wheel hits corner" },
+      { "x": 180, "y": 170, "label": "Over-correction" },
+      { "x": 250, "y": 160, "label": "Second correction" },
+      { "x": 450, "y": 150, "label": "Exit after 3 corrections" }
+    ],
+    "path": [
+      { "x": 50, "y": 450 },
+      { "x": 60, "y": 380 },
+      { "x": 75, "y": 320 },
+      { "x": 90, "y": 280 },
+      { "x": 105, "y": 250 },
+      { "x": 120, "y": 225 },
+      { "x": 135, "y": 205 },
+      { "x": 150, "y": 190 },
+      { "x": 170, "y": 175 },
+      { "x": 195, "y": 165 },
+      { "x": 230, "y": 158 },
+      { "x": 280, "y": 153 },
+      { "x": 340, "y": 150 },
+      { "x": 450, "y": 150 }
+    ],
+    "failure_reason": {
+      "en": "The driver approaches from the center of the lane without checking behind, then turns too early. The rear wheels cut inside and strike the inner corner of the crank. Multiple corrections are needed to recover, exhausting the three-correction limit.",
+      "pt": "O motorista se aproxima pelo centro da faixa sem verificar atras, entao esterça muito cedo. As rodas traseiras cortam por dentro e atingem o canto interno da curva. Sao necessarias multiplas correcoes para recuperar, esgotando o limite de tres correcoes."
+    }
+  },
+  "common_mistakes": {
+    "en": [
+      "Skipping the rear visual check before initiating the 90-degree turn",
+      "Approaching from the center of the lane instead of hugging the outer edge",
+      "Turning the wheel before the front bumper has passed the corner reference point",
+      "Accelerating during the turn instead of crawling with half-clutch control",
+      "Forgetting that the rear of the vehicle swings outward before the turn tightens"
+    ],
+    "pt": [
+      "Pular a verificacao visual traseira antes de iniciar a curva de 90 graus",
+      "Aproximar-se pelo centro da faixa em vez de seguir pela borda externa",
+      "Girar o volante antes que o para-choque dianteiro tenha passado pelo ponto de referencia do canto",
+      "Acelerar durante a curva em vez de avancar devagar com controle de meia-embreagem",
+      "Esquecer que a traseira do veiculo balanca para fora antes da curva se fechar"
+    ]
+  },
+  "checklist": [
+    {
+      "step": 1,
+      "text": {
+        "en": "Approach the crank at walking speed, positioned toward the outer edge of the lane",
+        "pt": "Aproxime-se da curva em velocidade de caminhada, posicionado na borda externa da faixa"
+      },
+      "pass_criteria": {
+        "en": "Vehicle is within 30cm of outer edge, speed under 5 km/h",
+        "pt": "Veiculo esta a ate 30cm da borda externa, velocidade abaixo de 5 km/h"
+      }
+    },
+    {
+      "step": 2,
+      "text": {
+        "en": "Come to a complete stop before the turn and check behind through the rear window and mirrors",
+        "pt": "Pare completamente antes da curva e verifique atras pela janela traseira e retrovisores"
+      },
+      "pass_criteria": {
+        "en": "Full stop achieved, head turn visible to examiner, mirrors checked",
+        "pt": "Parada completa realizada, giro de cabeca visivel ao examinador, retrovisores verificados"
+      }
+    },
+    {
+      "step": 3,
+      "text": {
+        "en": "Begin turning only when the side mirror aligns with the corner reference point",
+        "pt": "Comece a curva apenas quando o retrovisor lateral se alinhar com o ponto de referencia do canto"
+      },
+      "pass_criteria": {
+        "en": "Turn initiation is timed correctly, rear wheels clear the inner corner",
+        "pt": "Inicio da curva e cronometrado corretamente, rodas traseiras liberam o canto interno"
+      }
+    },
+    {
+      "step": 4,
+      "text": {
+        "en": "Maintain half-clutch throughout the turn, monitoring rear wheel position",
+        "pt": "Mantenha meia-embreagem durante toda a curva, monitorando a posicao das rodas traseiras"
+      },
+      "pass_criteria": {
+        "en": "Speed is constant and slow, no stalling or jerking",
+        "pt": "Velocidade e constante e lenta, sem morrer ou solavancos"
+      }
+    },
+    {
+      "step": 5,
+      "text": {
+        "en": "Straighten the wheel as the vehicle aligns with the exit lane",
+        "pt": "Endireite o volante conforme o veiculo se alinha com a faixa de saida"
+      },
+      "pass_criteria": {
+        "en": "Vehicle exits centered in the lane, wheels straight, no boundary contact",
+        "pt": "Veiculo sai centralizado na faixa, rodas retas, sem contato com limites"
+      }
+    }
+  ],
+  "pro_tip": {
+    "en": "Stop completely before the turn and look behind, because the rear wheels will follow a path you cannot see from the drivers seat.",
+    "pt": "Pare completamente antes da curva e olhe para tras, porque as rodas traseiras seguirao um caminho que voce nao pode ver do banco do motorista."
+  }
+}

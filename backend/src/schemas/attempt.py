@@ -7,6 +7,15 @@ from pydantic import BaseModel, Field
 from .ui_meta import Language
 
 
+class SelectionResult(BaseModel):
+    """Result of question selection for a mock test attempt."""
+
+    attempt_id: int
+    questions: list[dict]  # Serialized question summaries
+    tricky_ratio_actual: float
+    question_count: int
+
+
 class AnswerItem(BaseModel):
     """A single answer submitted by the user."""
 

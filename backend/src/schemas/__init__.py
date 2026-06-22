@@ -8,6 +8,7 @@ from .attempt import (
     AttemptResultOut,
     AttemptStartIn,
     AttemptSubmitIn,
+    SelectionResult,
 )
 from .study_plan import PlanDay, StudyPlanGenerateIn, StudyPlanOut, WeakThemeStat
 from .rag import RagAnswerOut, RagQueryIn, RagSourceOut
@@ -27,6 +28,7 @@ __all__ = [
     "AnswerItem",
     "AttemptResultOut",
     "AttemptAnswerOut",
+    "SelectionResult",
     # study_plan
     "StudyPlanGenerateIn",
     "StudyPlanOut",

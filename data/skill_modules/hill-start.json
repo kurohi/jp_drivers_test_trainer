@@ -1,0 +1,151 @@
+{
+  "id": 4,
+  "slug": "hill-start",
+  "name_en": "Hill Start",
+  "name_pt": "Partida em Subida",
+  "sort_order": 4,
+  "overview": {
+    "en": "The hill start evaluates your ability to move forward from a stopped position on an incline without rolling backward. The test course includes a slope of approximately 12 to 16 percent grade. You must come to a complete stop on the hill, then proceed forward without the vehicle rolling back more than a minimal distance. Rolling backward is the primary failure condition. Even a small rollback can result in point deductions, and excessive rollback causes instant failure. The maneuver tests clutch control, brake coordination, and the proper use of the parking brake as a holding device. Examiners watch for smooth engagement of the clutch, timely release of the parking brake, and whether the vehicle moves forward without hesitation or stalling. Many candidates stall the engine by releasing the clutch too quickly or roll back by releasing the foot brake before the clutch has reached the biting point. The handbrake method is the safest approach: apply the parking brake while stopped, find the clutch biting point with your foot, then release the parking brake as you add gentle throttle. This prevents any backward movement. The hill start often follows other maneuvers, so maintaining composure under cumulative test pressure is part of the challenge.",
+    "pt": "A partida em subida avalia sua capacidade de avancar a partir de uma posicao parada em uma inclinacao sem rolar para tras. O percurso de teste inclui uma rampa de aproximadamente 12 a 16 por cento de inclinacao. Voce deve parar completamente na subida, entao avancar sem que o veiculo role para tras mais que uma distancia minima. Rolar para tras e a principal condicao de reprovacao. Mesmo um pequeno rolamento para tras pode resultar em deducao de pontos, e rolamento excessivo causa reprovacao imediata. A manobra testa o controle de embreagem, coordenacao de freio e o uso adequado do freio de estacionamento como dispositivo de retencao. Os examinadores observam o engate suave da embreagem, a liberacao oportuna do freio de estacionamento e se o veiculo avanca sem hesitacao ou morrer. Muitos candidatos morrem o motor soltando a embreagem muito rapido ou rolam para tras soltando o freio de pe antes que a embreagem atinja o ponto de mordida. O metodo do freio de mao e o mais seguro: aplique o freio de estacionamento enquanto parado, encontre o ponto de mordida da embreagem com o pe, entao solte o freio de estacionamento enquanto adiciona aceleracao suave. Isso impede qualquer movimento para tras. A partida em subida frequentemente segue outras manobras, entao manter a compostura sob pressao cumulativa do teste faz parte do desafio."
+  },
+  "svg_path": "assets/skill/hill-start-diagram.svg",
+  "correct_trajectory": {
+    "keypoints": [
+      { "x": 50, "y": 400, "label": "Approach hill" },
+      { "x": 150, "y": 350, "label": "Stop on slope" },
+      { "x": 150, "y": 340, "label": "Handbrake on" },
+      { "x": 150, "y": 330, "label": "Find bite point" },
+      { "x": 150, "y": 300, "label": "Release handbrake" },
+      { "x": 200, "y": 250, "label": "Move forward" },
+      { "x": 350, "y": 150, "label": "Clear hill" }
+    ],
+    "path": [
+      { "x": 50, "y": 400 },
+      { "x": 80, "y": 390 },
+      { "x": 110, "y": 375 },
+      { "x": 135, "y": 360 },
+      { "x": 150, "y": 350 },
+      { "x": 150, "y": 340 },
+      { "x": 150, "y": 330 },
+      { "x": 150, "y": 310 },
+      { "x": 155, "y": 290 },
+      { "x": 165, "y": 270 },
+      { "x": 180, "y": 245 },
+      { "x": 200, "y": 220 },
+      { "x": 230, "y": 195 },
+      { "x": 265, "y": 175 },
+      { "x": 300, "y": 160 },
+      { "x": 350, "y": 150 }
+    ]
+  },
+  "wrong_trajectory": {
+    "keypoints": [
+      { "x": 50, "y": 400, "label": "Approach hill" },
+      { "x": 150, "y": 350, "label": "Stop on slope" },
+      { "x": 145, "y": 360, "label": "Roll back" },
+      { "x": 135, "y": 375, "label": "Excessive rollback" },
+      { "x": 140, "y": 365, "label": "Panic stall" },
+      { "x": 150, "y": 350, "label": "Restart attempt" },
+      { "x": 350, "y": 150, "label": "Failed" }
+    ],
+    "path": [
+      { "x": 50, "y": 400 },
+      { "x": 80, "y": 390 },
+      { "x": 110, "y": 375 },
+      { "x": 135, "y": 360 },
+      { "x": 150, "y": 350 },
+      { "x": 148, "y": 355 },
+      { "x": 143, "y": 362 },
+      { "x": 135, "y": 375 },
+      { "x": 130, "y": 380 },
+      { "x": 135, "y": 370 },
+      { "x": 145, "y": 358 },
+      { "x": 150, "y": 350 },
+      { "x": 155, "y": 340 },
+      { "x": 165, "y": 320 },
+      { "x": 180, "y": 290 },
+      { "x": 200, "y": 260 }
+    ],
+    "failure_reason": {
+      "en": "The driver releases the foot brake before finding the clutch biting point, causing the vehicle to roll backward down the slope. The rollback exceeds the allowed distance, resulting in instant failure. A panic stall compounds the error.",
+      "pt": "O motorista solta o freio de pe antes de encontrar o ponto de mordida da embreagem, fazendo o veiculo rolar para tras na rampa. O rolamento para tras excede a distancia permitida, resultando em reprovacao imediata. Uma morte por panico complica o erro."
+    }
+  },
+  "common_mistakes": {
+    "en": [
+      "Releasing the foot brake before the clutch reaches the biting point, causing rollback",
+      "Not using the parking brake as a holding device while transitioning from brake to accelerator",
+      "Releasing the clutch too quickly and stalling the engine on the slope",
+      "Adding too much throttle, causing the engine to rev loudly and wheels to spin",
+      "Forgetting to check mirrors and signal before moving forward from the stopped position"
+    ],
+    "pt": [
+      "Soltar o freio de pe antes que a embreagem atinja o ponto de mordida, causando rolamento para tras",
+      "Nao usar o freio de estacionamento como dispositivo de retencao durante a transicao do freio para o acelerador",
+      "Soltar a embreagem muito rapido e morrer o motor na rampa",
+      "Adicionar aceleracao demais, fazendo o motor girar alto e as rodas patinarem",
+      "Esquecer de verificar retrovisores e sinalizar antes de avancar da posicao parada"
+    ]
+  },
+  "checklist": [
+    {
+      "step": 1,
+      "text": {
+        "en": "Approach the hill and come to a smooth stop at the designated stopping point",
+        "pt": "Aproxime-se da subida e pare suavemente no ponto de parada designado"
+      },
+      "pass_criteria": {
+        "en": "Vehicle stops completely within the marked zone, no jerking",
+        "pt": "Veiculo para completamente dentro da zona marcada, sem solavancos"
+      }
+    },
+    {
+      "step": 2,
+      "text": {
+        "en": "Apply the parking brake firmly and keep the foot brake pressed",
+        "pt": "Aplique o freio de estacionamento firmemente e mantenha o freio de pe pressionado"
+      },
+      "pass_criteria": {
+        "en": "Parking brake is fully engaged, vehicle does not move",
+        "pt": "Freio de estacionamento esta totalmente acionado, veiculo nao se move"
+      }
+    },
+    {
+      "step": 3,
+      "text": {
+        "en": "Slowly release the clutch until you feel the biting point, then add gentle throttle",
+        "pt": "Solte a embreagem lentamente ate sentir o ponto de mordida, entao adicione aceleracao suave"
+      },
+      "pass_criteria": {
+        "en": "Engine sound changes slightly, vehicle vibrates at bite point, RPM stable around 1500",
+        "pt": "Som do motor muda levemente, veiculo vibra no ponto de mordida, RPM estavel em torno de 1500"
+      }
+    },
+    {
+      "step": 4,
+      "text": {
+        "en": "Release the parking brake while maintaining clutch position and throttle",
+        "pt": "Solte o freio de estacionamento mantendo a posicao da embreagem e aceleracao"
+      },
+      "pass_criteria": {
+        "en": "Vehicle moves forward immediately, no backward movement detected",
+        "pt": "Veiculo avanca imediatamente, sem movimento para tras detectado"
+      }
+    },
+    {
+      "step": 5,
+      "text": {
+        "en": "Smoothly release the clutch fully and accelerate up the hill",
+        "pt": "Solte suavemente a embreagem completamente e acelere subida"
+      },
+      "pass_criteria": {
+        "en": "Vehicle accelerates smoothly, no stalling, clears the hill within the course",
+        "pt": "Veiculo acelera suavemente, sem morrer, libera a subida dentro do percurso"
+      }
+    }
+  ],
+  "pro_tip": {
+    "en": "The parking brake is your safety net, find the clutch bite point first, then release the brake with confidence.",
+    "pt": "O freio de estacionamento e sua rede de seguranca, encontre o ponto de mordida da embreagem primeiro, entao solte o freio com confianca."
+  }
+}

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <rect width="500" height="500" fill="#f8f9fa"/>
+  <!-- Road -->
+  <rect x="30" y="180" width="440" height="60" fill="none" stroke="#333" stroke-width="2"/>
+  <!-- Parking bay -->
+  <rect x="180" y="260" width="140" height="100" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="6,3"/>
+  <!-- Adjacent vehicles (rectangles) -->
+  <rect x="100" y="265" width="70" height="90" fill="#ddd" stroke="#999" stroke-width="1" rx="5"/>
+  <rect x="330" y="265" width="70" height="90" fill="#ddd" stroke="#999" stroke-width="1" rx="5"/>
+  <!-- Correct trajectory (backing in) -->
+  <path d="M80 210 L140 210 Q160 210 170 230 Q180 260 200 290 Q220 320 250 330 L250 340" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="8,4"/>
+  <!-- Wrong trajectory -->
+  <path d="M80 210 L160 210 Q180 210 190 240 Q200 270 210 300 Q220 330 240 340 L250 340" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,4"/>
+  <!-- Reference point marker -->
+  <circle cx="140" cy="210" r="5" fill="#3b82f6"/>
+  <text x="125" y="200" font-size="9" fill="#3b82f6" font-family="sans-serif">Mirror align</text>
+  <!-- Rear check indicator -->
+  <text x="200" y="310" font-size="9" fill="#3b82f6" font-family="sans-serif">後方確認</text>
+  <!-- Labels -->
+  <text x="60" y="205" font-size="10" fill="#333" font-family="sans-serif">Approach</text>
+  <text x="230" y="370" font-size="10" fill="#333" font-family="sans-serif">Bay</text>
+  <text x="190" y="355" font-size="9" fill="#e74c3c" font-family="sans-serif">Wrong: overshoot</text>
+</svg>

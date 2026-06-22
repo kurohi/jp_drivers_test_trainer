@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <rect width="500" height="500" fill="#f8f9fa"/>
+  <!-- Lane boundaries -->
+  <rect x="30" y="180" width="440" height="140" fill="none" stroke="#333" stroke-width="2" rx="20"/>
+  <!-- S-curve path (correct trajectory) -->
+  <path d="M50 450 L50 380 Q50 320 90 290 Q140 250 200 230 Q260 220 310 240 Q370 270 410 320 Q440 370 450 430 L450 450" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="8,4"/>
+  <!-- Wrong trajectory -->
+  <path d="M50 450 L65 400 Q80 350 110 310 Q130 280 145 260 Q170 245 210 230 Q260 240 310 260 Q360 290 390 340 Q420 390 440 430 L450 450" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,4"/>
+  <!-- Curb markers -->
+  <line x1="30" y1="250" x2="30" y2="320" stroke="#e74c3c" stroke-width="4"/>
+  <line x1="470" y1="250" x2="470" y2="320" stroke="#e74c3c" stroke-width="4"/>
+  <!-- Direction arrows -->
+  <polygon points="50,420 45,435 55,435" fill="#22c55e"/>
+  <polygon points="450,420 445,435 455,435" fill="#22c55e"/>
+  <!-- Inner-wheel difference indicator -->
+  <text x="120" y="270" font-size="11" fill="#666" font-family="sans-serif">内輪差</text>
+  <path d="M100 280 Q110 290 120 285" fill="none" stroke="#666" stroke-width="1"/>
+  <!-- Labels -->
+  <text x="40" y="470" font-size="10" fill="#333" font-family="sans-serif">Start</text>
+  <text x="440" y="470" font-size="10" fill="#333" font-family="sans-serif">Finish</text>
+  <text x="200" y="215" font-size="10" fill="#22c55e" font-family="sans-serif">Correct path</text>
+  <text x="140" y="300" font-size="9" fill="#ef4444" font-family="sans-serif">Wrong: rear wheel hits curb</text>
+</svg>

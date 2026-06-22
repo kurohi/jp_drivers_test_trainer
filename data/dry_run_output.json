@@ -1,0 +1,67 @@
+[
+  {
+    "prompt_en": "Among those who have only recently obtained a regular driver’s license, only drivers who lack confidence in their driving display the novice driver sign; confident drivers are not required to display it.",
+    "answer_en": "false",
+    "explanation_en": "Drivers who have held a license for less than one year must display the novice driver sign, regardless of how confident they feel about their driving.",
+    "theme_slug": "license-system",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan — Written Test Practice",
+    "tricky": true,
+    "tricky_pattern": "assertive-language",
+    "difficulty": 4,
+    "raw_text": "Among those who have only recently obtained a regular driver’s license, only drivers who lack confidence in their driving display the novice driver sign; confident drivers are not required to display it."
+  },
+  {
+    "prompt_en": "When a pedestrian is crossing at or near an intersection without a designated crosswalk, drivers must slow down, stop, or take other necessary precautions to avoid obstructing the pedestrian’s crossing.",
+    "answer_en": "true",
+    "explanation_en": "Drivers should remain mindful of pedestrians while operating their vehicles.",
+    "theme_slug": "pedestrian-protection",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan — Written Test Practice",
+    "tricky": true,
+    "tricky_pattern": "assertive-language",
+    "difficulty": 4,
+    "raw_text": "When a pedestrian is crossing at or near an intersection without a designated crosswalk, drivers must slow down, stop, or take other necessary precautions to avoid obstructing the pedestrian’s crossing."
+  },
+  {
+    "prompt_en": "On national expressways, assuming a dry road surface and new tires, the recommended following distance at 100 km/h is approximately 100 meters.",
+    "answer_en": "true",
+    "explanation_en": "This distance between vehicles is necessary to account for the stopping distance.",
+    "theme_slug": "speed-and-following-distance",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan — Written Test Practice",
+    "tricky": false,
+    "tricky_pattern": null,
+    "difficulty": 2,
+    "raw_text": "On national expressways, assuming a dry road surface and new tires, the recommended following distance at 100 km/h is approximately 100 meters."
+  },
+  {
+    "prompt_en": "If passengers are entering or exiting a streetcar, the driver must remain stopped until all individuals have crossed the roadway, whether or not a safety zone exists.",
+    "answer_en": "false",
+    "explanation_en": "Vehicles are permitted to pass through a safety zone at a reduced speed.",
+    "theme_slug": "pedestrian-protection",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan — Written Test Practice",
+    "tricky": true,
+    "tricky_pattern": "assertive-language",
+    "difficulty": 4,
+    "raw_text": "If passengers are entering or exiting a streetcar, the driver must remain stopped until all individuals have crossed the roadway, whether or not a safety zone exists."
+  },
+  {
+    "prompt_en": "When overtaken by another vehicle, a driver need not make room within the lane, as long as they avoid accelerating, even if the gap to the vehicle ahead is insufficient.",
+    "answer_en": "false",
+    "explanation_en": "Drivers are expected to keep as far left as possible to let the overtaking vehicle through.",
+    "theme_slug": "overtaking-and-passing",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan — Written Test Practice",
+    "tricky": false,
+    "tricky_pattern": null,
+    "difficulty": 2,
+    "raw_text": "When overtaken by another vehicle, a driver need not make room within the lane, as long as they avoid accelerating, even if the gap to the vehicle ahead is insufficient."
+  }
+]

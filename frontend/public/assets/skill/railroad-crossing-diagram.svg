@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <rect width="500" height="500" fill="#f8f9fa"/>
+  <!-- Road -->
+  <rect x="30" y="270" width="440" height="60" fill="none" stroke="#333" stroke-width="2"/>
+  <!-- Railroad tracks -->
+  <line x1="200" y1="260" x2="200" y2="340" stroke="#333" stroke-width="3"/>
+  <line x1="220" y1="260" x2="220" y2="340" stroke="#333" stroke-width="3"/>
+  <!-- Cross ties -->
+  <line x1="190" y1="270" x2="230" y2="270" stroke="#666" stroke-width="2"/>
+  <line x1="190" y1="285" x2="230" y2="285" stroke="#666" stroke-width="2"/>
+  <line x1="190" y1="300" x2="230" y2="300" stroke="#666" stroke-width="2"/>
+  <line x1="190" y1="315" x2="230" y2="315" stroke="#666" stroke-width="2"/>
+  <line x1="190" y1="330" x2="230" y2="330" stroke="#666" stroke-width="2"/>
+  <!-- Stop line -->
+  <line x1="170" y1="270" x2="170" y2="330" stroke="#fff" stroke-width="4"/>
+  <!-- Correct trajectory -->
+  <path d="M50 300 L80 300 L110 300 L140 300 L160 300 L170 300 L170 300 L190 300 L210 300 L230 300 L250 300 L280 300 L320 300 L360 300 L400 300" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="8,4"/>
+  <!-- Stop marker -->
+  <rect x="155" y="265" width="30" height="70" fill="#3b82f6" opacity="0.2" stroke="#3b82f6" stroke-width="1"/>
+  <text x="148" y="258" font-size="9" fill="#3b82f6" font-family="sans-serif">一時停止</text>
+  <!-- Look left/right indicators -->
+  <text x="175" y="255" font-size="9" fill="#3b82f6" font-family="sans-serif">左</text>
+  <text x="225" y="255" font-size="9" fill="#3b82f6" font-family="sans-serif">右</text>
+  <!-- Wrong trajectory (rolling stop) -->
+  <path d="M50 300 L100 300 L150 300 L170 300 L180 300 L200 300 L210 300 L220 300 L240 300 L260 300 L280 300 L320 300 L360 300 L400 300" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,4"/>
+  <!-- Warning X marker -->
+  <text x="200" y="355" font-size="14" fill="#e74c3c" font-family="sans-serif" font-weight="bold">X</text>
+  <!-- Labels -->
+  <text x="40" y="350" font-size="10" fill="#333" font-family="sans-serif">Approach</text>
+  <text x="380" y="350" font-size="10" fill="#333" font-family="sans-serif">Clear</text>
+</svg>

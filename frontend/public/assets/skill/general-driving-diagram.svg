@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+  <rect width="500" height="500" fill="#f8f9fa"/>
+  <!-- Road with two lanes -->
+  <rect x="30" y="180" width="440" height="140" fill="none" stroke="#333" stroke-width="2"/>
+  <!-- Lane divider -->
+  <line x1="30" y1="250" x2="470" y2="250" stroke="#f59e0b" stroke-width="2" stroke-dasharray="20,10"/>
+  <!-- Intersection -->
+  <rect x="280" y="100" width="140" height="300" fill="none" stroke="#333" stroke-width="2"/>
+  <!-- Correct trajectory: lane change + wide turn -->
+  <path d="M50 300 L100 300 L120 300 L140 290 L160 270 L180 255 L200 245 L220 240 L250 235 L280 230 L300 220 L320 200 L340 180 L360 160 L380 145 L400 135 L420 130" fill="none" stroke="#22c55e" stroke-width="3" stroke-dasharray="8,4"/>
+  <!-- Signal indicators -->
+  <polygon points="120,285 115,295 125,295" fill="#f59e0b"/>
+  <text x="105" y="280" font-size="9" fill="#f59e0b" font-family="sans-serif">Signal ON</text>
+  <!-- Mirror check -->
+  <text x="140" y="275" font-size="9" fill="#3b82f6" font-family="sans-serif">ミラー確認</text>
+  <!-- Blind spot -->
+  <text x="170" y="250" font-size="9" fill="#3b82f6" font-family="sans-serif">死角確認</text>
+  <!-- Signal cancel -->
+  <text x="290" y="215" font-size="9" fill="#22c55e" font-family="sans-serif">Signal OFF</text>
+  <!-- Wrong trajectory: cutting corner -->
+  <path d="M50 300 L100 300 L150 300 L200 300 L250 290 L280 270 L300 240 L320 210 L340 180 L360 160 L380 145 L400 135 L420 130" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4,4"/>
+  <text x="290" y="260" font-size="9" fill="#ef4444" font-family="sans-serif">Corner cut</text>
+  <!-- Labels -->
+  <text x="40" y="340" font-size="10" fill="#333" font-family="sans-serif">Straight</text>
+  <text x="430" y="125" font-size="10" fill="#333" font-family="sans-serif">After turn</text>
+</svg>

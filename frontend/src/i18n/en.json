@@ -1,0 +1,39 @@
+{
+  "nav": {
+    "home": "Home",
+    "study": "Study",
+    "mockTest": "Mock Test",
+    "skillTest": "Skill Test",
+    "teacher": "Teacher",
+    "plan": "Plan",
+    "settings": "Settings"
+  },
+  "pageTitle": {
+    "home": "Dashboard",
+    "study": "Study",
+    "mockTest": "Mock Test",
+    "skillTest": "Skill Test",
+    "teacher": "Teacher",
+    "plan": "Study Plan",
+    "settings": "Settings"
+  },
+  "common": {
+    "buttons": {
+      "start": "Start",
+      "submit": "Submit",
+      "cancel": "Cancel",
+      "back": "Back",
+      "next": "Next",
+      "previous": "Previous",
+      "confirm": "Confirm",
+      "showExplanation": "Show explanation"
+    },
+    "difficulty": {
+      "beginner": "Beginner",
+      "easy": "Easy",
+      "standard": "Standard",
+      "hard": "Hard",
+      "expert": "Expert"
+    }
+  }
+}
