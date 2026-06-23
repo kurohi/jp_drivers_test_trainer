@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test"
 
 const routes = [
   { path: "/", en: "Dashboard", pt: "Painel" },
-  { path: "/study", en: "Study", pt: "Estudo" },
+  { path: "/study", en: "Study by Theme", pt: "Estudo por Tema" },
   { path: "/mock-test", en: "Mock Test", pt: "Simulado" },
   { path: "/skill-test", en: "Skill Test", pt: "Teste de Habilidade" },
   { path: "/teacher", en: "Teacher", pt: "Professor" },

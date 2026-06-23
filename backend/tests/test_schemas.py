@@ -199,7 +199,7 @@ class TestAttemptSchemas:
             language="pt",
             theme_ids=[1, 2, 3],
             question_count=25,
-            tricky_ratio=0.3,
+            tricky_ratio=0.25,
             time_limit_seconds=900,
             seed=42,
         )

@@ -4,7 +4,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from api.routes.skill_test import router as skill_test_router
+from src.api.routes.skill_test import router as skill_test_router
 from src.api.routes import api_router
 from src.api.routes.rag import router as rag_router
 

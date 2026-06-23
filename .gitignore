@@ -42,3 +42,14 @@ Thumbs.db
 data/*.db
 data/*.sqlite
 data/*.sqlite3
+backend/data/*.sqlite
+backend/data/*.db
+
+# Generated / build artifacts
+frontend/.tanstack/
+frontend/playwright-report/
+frontend/test-results/
+frontend/tsconfig.tsbuildinfo
+
+# OpenCode evidence
+.omo/

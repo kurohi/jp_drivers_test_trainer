@@ -58,16 +58,10 @@ test.describe("Study by Theme — mock mode", () => {
     // Should navigate to detail with questions
     await expect(page).toHaveURL(/\/study\/\w+/)
 
-    // Wait for question list or empty state
-    const questionList = page.getByTestId("question-list")
-    const emptyState = page.getByTestId("questions-empty")
+    const questionCards = page.locator('[data-testid^="question-card-"]')
+    const hasCards = await questionCards.first().waitFor({ state: "attached", timeout: 10_000 }).then(() => true).catch(() => false)
 
-    if (await questionList.isVisible().catch(() => false)) {
-      const questionCards = page.locator('[data-testid^="question-card-"]')
-      const count = await questionCards.count()
-      expect(count).toBeGreaterThan(0)
-
-      // First question should have True and False buttons
+    if (hasCards) {
       const firstQuestion = questionCards.first()
       const cardId = await firstQuestion.getAttribute("data-testid")
       const id = cardId?.replace("question-card-", "")
@@ -75,8 +69,7 @@ test.describe("Study by Theme — mock mode", () => {
       await expect(page.getByTestId(`question-true-${id}`)).toBeVisible()
       await expect(page.getByTestId(`question-false-${id}`)).toBeVisible()
     } else {
-      // If no questions, the empty state should show
-      await expect(emptyState).toBeVisible()
+      await expect(page.getByTestId("question-list-empty")).toBeVisible({ timeout: 10_000 })
     }
   })
 
@@ -88,18 +81,16 @@ test.describe("Study by Theme — mock mode", () => {
     await firstCard.click()
     await expect(page).toHaveURL(/\/study\/\w+/)
 
-    const questionList = page.getByTestId("question-list")
-    if (!(await questionList.isVisible().catch(() => false))) return // skip if no questions
+    const questionCard = page.locator('[data-testid^="question-card-"]').first()
+    const hasCard = await questionCard.waitFor({ state: "attached", timeout: 10_000 }).then(() => true).catch(() => false)
+    if (!hasCard) return
 
-    const firstQuestion = page.locator('[data-testid^="question-card-"]').first()
-    const cardId = await firstQuestion.getAttribute("data-testid")
+    const cardId = await questionCard.getAttribute("data-testid")
     const id = cardId?.replace("question-card-", "")
 
-    // Reveal button should be disabled initially
     const revealButton = page.getByTestId(`question-reveal-${id}`)
     await expect(revealButton).toBeDisabled()
 
-    // Click True
     await page.getByTestId(`question-true-${id}`).click()
     await expect(revealButton).toBeEnabled()
   })
@@ -112,11 +103,11 @@ test.describe("Study by Theme — mock mode", () => {
     await firstCard.click()
     await expect(page).toHaveURL(/\/study\/\w+/)
 
-    const questionList = page.getByTestId("question-list")
-    if (!(await questionList.isVisible().catch(() => false))) return // skip if no questions
+    const questionCard = page.locator('[data-testid^="question-card-"]').first()
+    const hasCard = await questionCard.waitFor({ state: "attached", timeout: 10_000 }).then(() => true).catch(() => false)
+    if (!hasCard) return
 
-    const firstQuestion = page.locator('[data-testid^="question-card-"]').first()
-    const cardId = await firstQuestion.getAttribute("data-testid")
+    const cardId = await questionCard.getAttribute("data-testid")
     const id = cardId?.replace("question-card-", "")
 
     // Select True

@@ -53,6 +53,8 @@ export function MockTestRunner({ attemptId, paramAttemptId }: MockTestRunnerProp
       const correct = api.mockTests.getCorrectAnswers(attemptId);
       if (correct) {
         (window as unknown as Record<string, unknown>).__mockTestCorrectAnswers = correct;
+        const ordered = questions.map((q) => correct[q.id]);
+        (window as unknown as Record<string, unknown>).__mockTestCorrectAnswersOrdered = ordered;
       }
     }
   }, [attemptId]);

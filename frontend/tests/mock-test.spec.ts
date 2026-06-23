@@ -10,8 +10,8 @@ async function answerAllQuestions(
   const total = 50
 
   const correctAnswers = (await page.evaluate(() => {
-    const map = (window as unknown as Record<string, Record<string, string>>).__mockTestCorrectAnswers
-    return map ? Object.values(map) : null
+    const ordered = (window as unknown as Record<string, unknown>).__mockTestCorrectAnswersOrdered
+    return ordered ? (ordered as string[]) : null
   })) as string[] | null
 
   for (let i = 0; i < total; i++) {
