@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from datetime import datetime, timedelta, timezone
 from typing import Optional
 
 from sqlalchemy import select
@@ -89,3 +90,31 @@ class AttemptRepo:
         answers_result = await self._session.execute(answers_stmt)
         attempt.answers = list(answers_result.scalars().all())
         return attempt
+
+    async def list_recent_with_answers(
+        self, days: int = 30
+    ) -> list[Attempt]:
+        """Return finished attempts from the past N days with answers loaded.
+
+        Only includes attempts that have been scored (finished_at is set).
+        Answers are attached to each attempt instance.
+        """
+        cutoff = datetime.now(timezone.utc) - timedelta(days=days)
+        stmt = (
+            select(Attempt)
+            .where(Attempt.finished_at.isnot(None))
+            .where(Attempt.started_at >= cutoff)
+            .order_by(Attempt.started_at.desc())
+        )
+        result = await self._session.execute(stmt)
+        attempts = list(result.scalars().all())
+
+        # Load answers for each attempt
+        for attempt in attempts:
+            answers_stmt = select(AttemptAnswer).where(
+                AttemptAnswer.attempt_id == attempt.id
+            )
+            answers_result = await self._session.execute(answers_stmt)
+            attempt.answers = list(answers_result.scalars().all())
+
+        return attempts

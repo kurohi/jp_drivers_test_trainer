@@ -1,0 +1,102 @@
+[
+  {
+    "prompt_en": "Para dirigir no Japao, voce precisa exibir o sinal de motorista novato durante o primeiro ano.",
+    "answer_en": "true",
+    "explanation_en": "O sinal de motorista novato (wakaba) e obrigatorio para motoristas no primeiro ano.",
+    "theme_slug": "license-system",
+    "source_url": "https://brnojapao.com.br/artigo/cnh-japonesa",
+    "license": "rewrite-required",
+    "attribution": "BR no Japao",
+    "raw_text": "Para dirigir no Japao, voce precisa exibir o sinal de motorista novato durante o primeiro ano."
+  },
+  {
+    "prompt_en": "Os motoristas devem parar completamente nos cruzamentos de ferrovia, mesmo sem trens visiveis.",
+    "answer_en": "true",
+    "explanation_en": "A parada completa e obrigatoria em todos os cruzamentos de ferrovia.",
+    "theme_slug": "intersections-and-railroad-crossings",
+    "source_url": "https://brnojapao.com.br/artigo/cnh-japonesa",
+    "license": "rewrite-required",
+    "attribution": "BR no Japao",
+    "raw_text": "Os motoristas devem parar completamente nos cruzamentos de ferrovia."
+  },
+  {
+    "prompt_en": "A distancia de seguimento minima em rodovias e de 2 segundos em condicoes normais.",
+    "answer_en": "true",
+    "explanation_en": "A regra dos 2 segundos e o padrao para distancia de seguimento.",
+    "theme_slug": "speed-and-following-distance",
+    "source_url": "https://brnojapao.com.br/artigo/cnh-japonesa",
+    "license": "rewrite-required",
+    "attribution": "BR no Japao",
+    "raw_text": "A distancia de seguimento minima em rodovias e de 2 segundos."
+  },
+  {
+    "prompt_en": "Motoristas devem ceder a passagem a pedestres em todas as faixas de pedestre.",
+    "answer_en": "true",
+    "explanation_en": "Pedestres tem prioridade em faixas de pedestre.",
+    "theme_slug": "pedestrian-protection",
+    "source_url": "https://brnojapao.com.br/artigo/cnh-japonesa",
+    "license": "rewrite-required",
+    "attribution": "BR no Japao",
+    "raw_text": "Motoristas devem ceder a passagem a pedestres em todas as faixas de pedestre."
+  },
+  {
+    "prompt_en": "Voce deve usar a seta pelo menos 30 metros antes de fazer uma curva.",
+    "answer_en": "true",
+    "explanation_en": "A sinalizacao deve ser ativada com antecedencia para alertar outros motoristas.",
+    "theme_slug": "signals",
+    "source_url": "https://brnojapao.com.br/artigo/cnh-japonesa",
+    "license": "rewrite-required",
+    "attribution": "BR no Japao",
+    "raw_text": "Voce deve usar a seta pelo menos 30 metros antes de fazer uma curva."
+  },
+  {
+    "prompt_en": "A ultrapassagem e proibida em intersecoes e cruzamentos de ferrovia.",
+    "answer_en": "true",
+    "explanation_en": "Ultrapassar nesses locais e perigoso e proibido.",
+    "theme_slug": "overtaking-and-passing",
+    "source_url": "https://brnojapao.com.br/artigo/cnh-japonesa",
+    "license": "rewrite-required",
+    "attribution": "BR no Japao",
+    "raw_text": "A ultrapassagem e proibida em intersecoes e cruzamentos de ferrovia."
+  },
+  {
+    "prompt_en": "Motoristas devem verificar os pontos cegos antes de mudar de faixa.",
+    "answer_en": "true",
+    "explanation_en": "A verificacao de pontos cegos e essencial para mudancas de faixa seguras.",
+    "theme_slug": "blind-spots",
+    "source_url": "https://brnojapao.com.br/artigo/cnh-japonesa",
+    "license": "rewrite-required",
+    "attribution": "BR no Japao",
+    "raw_text": "Motoristas devem verificar os pontos cegos antes de mudar de faixa."
+  },
+  {
+    "prompt_en": "Em caso de acidente, os motoristas devem permanecer no local e chamar a policia.",
+    "answer_en": "true",
+    "explanation_en": "Abandonar o local do acidente e crime de fuga.",
+    "theme_slug": "accident-response",
+    "source_url": "https://brnojapao.com.br/artigo/cnh-japonesa",
+    "license": "rewrite-required",
+    "attribution": "BR no Japao",
+    "raw_text": "Em caso de acidente, os motoristas devem permanecer no local."
+  },
+  {
+    "prompt_en": "Veiculos de emergencia com sirenes e luzes piscantes tem prioridade na via.",
+    "answer_en": "true",
+    "explanation_en": "Motoristas devem ceder passagem a veiculos de emergencia.",
+    "theme_slug": "emergency-vehicle-priority",
+    "source_url": "https://brnojapao.com.br/artigo/cnh-japonesa",
+    "license": "rewrite-required",
+    "attribution": "BR no Japao",
+    "raw_text": "Veiculos de emergencia com sirenes e luzes piscantes tem prioridade."
+  },
+  {
+    "prompt_en": "Motoristas devem reduzir a velocidade em condicoes de chuva para evitar aquaplanagem.",
+    "answer_en": "true",
+    "explanation_en": "Velocidade reduzida na chuva melhora a aderencia e evita aquaplanagem.",
+    "theme_slug": "adverse-conditions",
+    "source_url": "https://brnojapao.com.br/artigo/cnh-japonesa",
+    "license": "rewrite-required",
+    "attribution": "BR no Japao",
+    "raw_text": "Motoristas devem reduzir a velocidade em condicoes de chuva."
+  }
+]

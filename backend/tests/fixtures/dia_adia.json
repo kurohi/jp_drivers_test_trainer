@@ -1,0 +1,102 @@
+[
+  {
+    "prompt_en": "Drivers must always obey traffic signals, even when no other vehicles are present.",
+    "answer_en": "true",
+    "explanation_en": "Traffic signals must be obeyed at all times.",
+    "theme_slug": "signals",
+    "source_url": "https://diaadia.news/traffic-rules-japan",
+    "license": "rewrite-required",
+    "attribution": "DIA A DIA",
+    "raw_text": "Drivers must always obey traffic signals, even when no other vehicles are present."
+  },
+  {
+    "prompt_en": "The speed limit on expressways in Japan is typically 100 km/h.",
+    "answer_en": "true",
+    "explanation_en": "Expressway speed limits are typically 100 km/h.",
+    "theme_slug": "highway-driving",
+    "source_url": "https://diaadia.news/traffic-rules-japan",
+    "license": "rewrite-required",
+    "attribution": "DIA A DIA",
+    "raw_text": "The speed limit on expressways in Japan is typically 100 km/h."
+  },
+  {
+    "prompt_en": "Drivers must yield to pedestrians at all crosswalks.",
+    "answer_en": "true",
+    "explanation_en": "Pedestrian priority is a fundamental rule.",
+    "theme_slug": "pedestrian-protection",
+    "source_url": "https://diaadia.news/traffic-rules-japan",
+    "license": "rewrite-required",
+    "attribution": "DIA A DIA",
+    "raw_text": "Drivers must yield to pedestrians at all crosswalks."
+  },
+  {
+    "prompt_en": "Overtaking is prohibited at intersections.",
+    "answer_en": "true",
+    "explanation_en": "Intersection overtaking is dangerous.",
+    "theme_slug": "overtaking-and-passing",
+    "source_url": "https://diaadia.news/traffic-rules-japan",
+    "license": "rewrite-required",
+    "attribution": "DIA A DIA",
+    "raw_text": "Overtaking is prohibited at intersections."
+  },
+  {
+    "prompt_en": "Drivers must check tire pressure regularly for safe operation.",
+    "answer_en": "true",
+    "explanation_en": "Proper tire pressure is essential for safety.",
+    "theme_slug": "vehicle-maintenance",
+    "source_url": "https://diaadia.news/traffic-rules-japan",
+    "license": "rewrite-required",
+    "attribution": "DIA A DIA",
+    "raw_text": "Drivers must check tire pressure regularly."
+  },
+  {
+    "prompt_en": "Parking is prohibited within 5 meters of a fire hydrant.",
+    "answer_en": "true",
+    "explanation_en": "Fire hydrant access must remain clear.",
+    "theme_slug": "parking-and-stopping",
+    "source_url": "https://diaadia.news/traffic-rules-japan",
+    "license": "rewrite-required",
+    "attribution": "DIA A DIA",
+    "raw_text": "Parking is prohibited within 5 meters of a fire hydrant."
+  },
+  {
+    "prompt_en": "Drivers must reduce speed in adverse weather conditions.",
+    "answer_en": "true",
+    "explanation_en": "Adverse conditions require reduced speed.",
+    "theme_slug": "adverse-conditions",
+    "source_url": "https://diaadia.news/traffic-rules-japan",
+    "license": "rewrite-required",
+    "attribution": "DIA A DIA",
+    "raw_text": "Drivers must reduce speed in adverse weather conditions."
+  },
+  {
+    "prompt_en": "Emergency vehicles have priority on all roads.",
+    "answer_en": "true",
+    "explanation_en": "Drivers must yield to emergency vehicles.",
+    "theme_slug": "emergency-vehicle-priority",
+    "source_url": "https://diaadia.news/traffic-rules-japan",
+    "license": "rewrite-required",
+    "attribution": "DIA A DIA",
+    "raw_text": "Emergency vehicles have priority on all roads."
+  },
+  {
+    "prompt_en": "Drivers must stop at railroad crossings when warning lights are flashing.",
+    "answer_en": "true",
+    "explanation_en": "Flashing lights require a complete stop.",
+    "theme_slug": "intersections-and-railroad-crossings",
+    "source_url": "https://diaadia.news/traffic-rules-japan",
+    "license": "rewrite-required",
+    "attribution": "DIA A DIA",
+    "raw_text": "Drivers must stop at railroad crossings when warning lights are flashing."
+  },
+  {
+    "prompt_en": "Drivers must display the novice sign for the first year after obtaining their license.",
+    "answer_en": "true",
+    "explanation_en": "The novice sign is required for new drivers.",
+    "theme_slug": "license-system",
+    "source_url": "https://diaadia.news/traffic-rules-japan",
+    "license": "rewrite-required",
+    "attribution": "DIA A DIA",
+    "raw_text": "Drivers must display the novice sign for the first year."
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "prompt_en": "When your vehicle is in an intersection and you notice an emergency vehicle is approaching from behind, you must stop there immediately.",
+    "answer_en": "false",
+    "explanation_en": "You must not stop immediately. You must avoid intersection, move to the left and stop.",
+    "theme_slug": "emergency-vehicle-priority",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "When your vehicle is in an intersection and you notice an emergency vehicle is approaching from behind, you must stop there immediately."
+  },
+  {
+    "prompt_en": "When passing a railroad crossing where visibility is good or where there is a gateman, you just have to slow down.",
+    "answer_en": "false",
+    "explanation_en": "Even if visibility is good or there is a gateman, you must stop before the railroad crossing.",
+    "theme_slug": "intersections-and-railroad-crossings",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "When passing a railroad crossing where visibility is good or where there is a gateman, you just have to slow down."
+  },
+  {
+    "prompt_en": "This side strip indicates parking or stopping is prohibited.",
+    "answer_en": "true",
+    "explanation_en": "Correct",
+    "theme_slug": "parking-and-stopping",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "This side strip indicates parking or stopping is prohibited."
+  },
+  {
+    "prompt_en": "When you approach a pedestrian crossing and a pedestrian is crossing on it, you slow down and pass the pedestrian crossing while paying attention not to disturb the passage of the pedestrian.",
+    "answer_en": "false",
+    "explanation_en": "When a pedestrian is crossing a pedestrian crossing, you must stop before the pedestrian crossing and yield to the pedestrian.",
+    "theme_slug": "pedestrian-protection",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "When you approach a pedestrian crossing and a pedestrian is crossing on it."
+  },
+  {
+    "prompt_en": "When the surface of the roads changes, the braking distance will also change even in a same speed.",
+    "answer_en": "true",
+    "explanation_en": "Correct",
+    "theme_slug": "speed-and-following-distance",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "When the surface of the roads changes, the braking distance will also change even in a same speed."
+  },
+  {
+    "prompt_en": "Drivers must always stop at railroad crossings regardless of visibility.",
+    "answer_en": "true",
+    "explanation_en": "Drivers must always stop at railroad crossings.",
+    "theme_slug": "intersections-and-railroad-crossings",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "Drivers must always stop at railroad crossings regardless of visibility."
+  },
+  {
+    "prompt_en": "Drivers must always yield to pedestrians at crosswalks.",
+    "answer_en": "true",
+    "explanation_en": "Drivers must always yield to pedestrians.",
+    "theme_slug": "pedestrian-protection",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "Drivers must always yield to pedestrians at crosswalks."
+  },
+  {
+    "prompt_en": "When driving in fog, you should use your low beam headlights.",
+    "answer_en": "true",
+    "explanation_en": "Low beams provide better visibility in fog than high beams.",
+    "theme_slug": "adverse-conditions",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "When driving in fog, you should use your low beam headlights."
+  },
+  {
+    "prompt_en": "You must check your blind spot before changing lanes.",
+    "answer_en": "true",
+    "explanation_en": "Blind spot checks are essential for safe lane changes.",
+    "theme_slug": "blind-spots",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "You must check your blind spot before changing lanes."
+  },
+  {
+    "prompt_en": "When your vehicle breaks down on a highway, you should move it to the shoulder and turn on your hazard lights.",
+    "answer_en": "true",
+    "explanation_en": "Moving to the shoulder and using hazard lights prevents secondary accidents.",
+    "theme_slug": "accident-response",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "When your vehicle breaks down on a highway, you should move it to the shoulder and turn on your hazard lights."
+  }
+]

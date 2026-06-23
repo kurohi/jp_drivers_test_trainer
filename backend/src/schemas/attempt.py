@@ -2,9 +2,11 @@
 
 from typing import Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 from .ui_meta import Language
+
+VALID_TRICKY_RATIOS = {0.0, 0.25, 0.5, 0.75, 1.0}
 
 
 class SelectionResult(BaseModel):
@@ -29,10 +31,19 @@ class AttemptStartIn(BaseModel):
 
     language: Language
     theme_ids: list[int] | None = None  # None = all themes
-    question_count: int = Field(default=50, ge=1, le=200)
-    tricky_ratio: float = Field(default=0.5, ge=0.0, le=1.0)
-    time_limit_seconds: int = Field(default=1800, ge=60, le=7200)
+    question_count: int = Field(default=50, ge=5, le=50)
+    tricky_ratio: float = Field(default=0.5)
+    time_limit_seconds: int = Field(default=1800, le=1800)
     seed: int | None = None
+
+    @field_validator("tricky_ratio")
+    @classmethod
+    def validate_tricky_ratio(cls, v: float) -> float:
+        if v not in VALID_TRICKY_RATIOS:
+            raise ValueError(
+                f"tricky_ratio must be one of {sorted(VALID_TRICKY_RATIOS)}, got {v}"
+            )
+        return v
 
 
 class AttemptSubmitIn(BaseModel):

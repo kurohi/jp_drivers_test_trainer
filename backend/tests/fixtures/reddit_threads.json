@@ -1,0 +1,102 @@
+[
+  {
+    "prompt_en": "I just passed my gaimen kirikae test! The written test was harder than I expected. They asked about signal timing and pedestrian priority.",
+    "answer_en": "false",
+    "explanation_en": "Community discussion about the test experience.",
+    "theme_slug": "signals",
+    "source_url": "https://reddit.com/r/japanresidents/comments/abc123",
+    "license": "community-free",
+    "attribution": "Reddit r/japanresidents",
+    "raw_text": "I just passed my gaimen kirikae test!"
+  },
+  {
+    "prompt_en": "The skill test requires you to check your blind spots before every lane change.",
+    "answer_en": "true",
+    "explanation_en": "Blind spot checks are mandatory during the skill test.",
+    "theme_slug": "blind-spots",
+    "source_url": "https://reddit.com/r/japanresidents/comments/def456",
+    "license": "community-free",
+    "attribution": "Reddit r/japanresidents",
+    "raw_text": "The skill test requires you to check your blind spots before every lane change."
+  },
+  {
+    "prompt_en": "For the 外免切替 written test, you need to study the Japanese traffic rules thoroughly.",
+    "answer_en": "true",
+    "explanation_en": "The written test covers Japanese traffic rules comprehensively.",
+    "theme_slug": "driver-mindset",
+    "source_url": "https://reddit.com/r/japanresidents/comments/ghi789",
+    "license": "community-free",
+    "attribution": "Reddit r/japanresidents",
+    "raw_text": "For the 外免切替 written test, you need to study the Japanese traffic rules thoroughly."
+  },
+  {
+    "prompt_en": "Drivers must yield to pedestrians at all crosswalks, marked or unmarked.",
+    "answer_en": "true",
+    "explanation_en": "Pedestrian priority applies at all intersections.",
+    "theme_slug": "pedestrian-protection",
+    "source_url": "https://reddit.com/r/japanresidents/comments/jkl012",
+    "license": "community-free",
+    "attribution": "Reddit r/japanresidents",
+    "raw_text": "Drivers must yield to pedestrians at all crosswalks, marked or unmarked."
+  },
+  {
+    "prompt_en": "The driving test in Japan requires you to signal at least 30 meters before turning.",
+    "answer_en": "true",
+    "explanation_en": "Signal timing is strictly enforced during the skill test.",
+    "theme_slug": "signals",
+    "source_url": "https://reddit.com/r/japanresidents/comments/mno345",
+    "license": "community-free",
+    "attribution": "Reddit r/japanresidents",
+    "raw_text": "The driving test in Japan requires you to signal at least 30 meters before turning."
+  },
+  {
+    "prompt_en": "You will fail the skill test if you do not come to a complete stop at stop lines.",
+    "answer_en": "true",
+    "explanation_en": "Incomplete stops are an automatic fail on the skill test.",
+    "theme_slug": "intersections-and-railroad-crossings",
+    "source_url": "https://reddit.com/r/japanresidents/comments/pqr678",
+    "license": "community-free",
+    "attribution": "Reddit r/japanresidents",
+    "raw_text": "You will fail the skill test if you do not come to a complete stop at stop lines."
+  },
+  {
+    "prompt_en": "The written test has 50 true/false questions and you need 45 correct to pass.",
+    "answer_en": "true",
+    "explanation_en": "The passing score is 45 out of 50 questions.",
+    "theme_slug": "license-system",
+    "source_url": "https://reddit.com/r/japanresidents/comments/stu901",
+    "license": "community-free",
+    "attribution": "Reddit r/japanresidents",
+    "raw_text": "The written test has 50 true/false questions and you need 45 correct to pass."
+  },
+  {
+    "prompt_en": "Drivers must check their mirrors and blind spots before parallel parking.",
+    "answer_en": "true",
+    "explanation_en": "Mirror and blind spot checks are part of the parking evaluation.",
+    "theme_slug": "parking-and-stopping",
+    "source_url": "https://reddit.com/r/japanresidents/comments/vwx234",
+    "license": "community-free",
+    "attribution": "Reddit r/japanresidents",
+    "raw_text": "Drivers must check their mirrors and blind spots before parallel parking."
+  },
+  {
+    "prompt_en": "Emergency vehicles always have priority on Japanese roads.",
+    "answer_en": "true",
+    "explanation_en": "Drivers must yield to emergency vehicles with active signals.",
+    "theme_slug": "emergency-vehicle-priority",
+    "source_url": "https://reddit.com/r/japanresidents/comments/yza567",
+    "license": "community-free",
+    "attribution": "Reddit r/japanresidents",
+    "raw_text": "Emergency vehicles always have priority on Japanese roads."
+  },
+  {
+    "prompt_en": "You should reduce your speed when driving in rain to prevent hydroplaning.",
+    "answer_en": "true",
+    "explanation_en": "Reduced speed in rain improves traction and prevents hydroplaning.",
+    "theme_slug": "adverse-conditions",
+    "source_url": "https://reddit.com/r/japanresidents/comments/bcd890",
+    "license": "community-free",
+    "attribution": "Reddit r/japanresidents",
+    "raw_text": "You should reduce your speed when driving in rain to prevent hydroplaning."
+  }
+]

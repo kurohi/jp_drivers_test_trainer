@@ -1,0 +1,102 @@
+[
+  {
+    "prompt_en": "What is the minimum following distance on highways? I always get confused about the 2-second rule.",
+    "answer_en": "true",
+    "explanation_en": "The 2-second rule is the standard following distance under normal conditions.",
+    "theme_slug": "speed-and-following-distance",
+    "source_url": "https://menkyohub.com/questions/following-distance",
+    "license": "community-free",
+    "attribution": "MenkyoHub Community",
+    "raw_text": "What is the minimum following distance on highways? I always get confused about the 2-second rule."
+  },
+  {
+    "prompt_en": "Do I need to display the novice sign if I have 5 years of driving experience in the US?",
+    "answer_en": "true",
+    "explanation_en": "Yes, the novice sign is required for all drivers within their first year of obtaining a Japanese license.",
+    "theme_slug": "license-system",
+    "source_url": "https://menkyohub.com/questions/novice-sign",
+    "license": "community-free",
+    "attribution": "MenkyoHub Community",
+    "raw_text": "Do I need to display the novice sign if I have 5 years of driving experience in the US?"
+  },
+  {
+    "prompt_en": "How do you handle blind spot checks during the skill test? The examiner is watching closely.",
+    "answer_en": "true",
+    "explanation_en": "You must visibly turn your head to check blind spots during the skill test.",
+    "theme_slug": "blind-spots",
+    "source_url": "https://menkyohub.com/questions/blind-spot-checks",
+    "license": "community-free",
+    "attribution": "MenkyoHub Community",
+    "raw_text": "How do you handle blind spot checks during the skill test?"
+  },
+  {
+    "prompt_en": "Is it true that you must stop completely at railroad crossings even if there are no trains?",
+    "answer_en": "true",
+    "explanation_en": "Yes, a complete stop is required at all railroad crossings regardless of train presence.",
+    "theme_slug": "intersections-and-railroad-crossings",
+    "source_url": "https://menkyohub.com/questions/railroad-crossings",
+    "license": "community-free",
+    "attribution": "MenkyoHub Community",
+    "raw_text": "Is it true that you must stop completely at railroad crossings even if there are no trains?"
+  },
+  {
+    "prompt_en": "What happens if you fail the written test? Can you retake it immediately?",
+    "answer_en": "false",
+    "explanation_en": "You must wait before retaking the written test; immediate retakes are not allowed.",
+    "theme_slug": "license-system",
+    "source_url": "https://menkyohub.com/questions/retake-policy",
+    "license": "community-free",
+    "attribution": "MenkyoHub Community",
+    "raw_text": "What happens if you fail the written test? Can you retake it immediately?"
+  },
+  {
+    "prompt_en": "Drivers must yield to pedestrians at all intersections, even without marked crosswalks.",
+    "answer_en": "true",
+    "explanation_en": "All intersections are considered crosswalks in Japan.",
+    "theme_slug": "pedestrian-protection",
+    "source_url": "https://menkyohub.com/questions/pedestrian-rights",
+    "license": "community-free",
+    "attribution": "MenkyoHub Community",
+    "raw_text": "Drivers must yield to pedestrians at all intersections, even without marked crosswalks."
+  },
+  {
+    "prompt_en": "How early should you signal before turning? I heard 30 meters but I'm not sure.",
+    "answer_en": "true",
+    "explanation_en": "Signals must be activated at least 30 meters (or 3 seconds) before turning.",
+    "theme_slug": "signals",
+    "source_url": "https://menkyohub.com/questions/signal-timing",
+    "license": "community-free",
+    "attribution": "MenkyoHub Community",
+    "raw_text": "How early should you signal before turning? I heard 30 meters but I'm not sure."
+  },
+  {
+    "prompt_en": "Can you overtake on a solid white line if there's no oncoming traffic?",
+    "answer_en": "false",
+    "explanation_en": "Solid white lines indicate no overtaking regardless of traffic conditions.",
+    "theme_slug": "overtaking-and-passing",
+    "source_url": "https://menkyohub.com/questions/overtaking-rules",
+    "license": "community-free",
+    "attribution": "MenkyoHub Community",
+    "raw_text": "Can you overtake on a solid white line if there's no oncoming traffic?"
+  },
+  {
+    "prompt_en": "What should you do if your car breaks down on the highway?",
+    "answer_en": "true",
+    "explanation_en": "Move to the shoulder, turn on hazard lights, and place a warning triangle.",
+    "theme_slug": "accident-response",
+    "source_url": "https://menkyohub.com/questions/breakdown-procedure",
+    "license": "community-free",
+    "attribution": "MenkyoHub Community",
+    "raw_text": "What should you do if your car breaks down on the highway?"
+  },
+  {
+    "prompt_en": "Is it mandatory to carry a reflective triangle in your vehicle?",
+    "answer_en": "true",
+    "explanation_en": "A warning triangle is required for highway breakdowns.",
+    "theme_slug": "vehicle-maintenance",
+    "source_url": "https://menkyohub.com/questions/emergency-kit",
+    "license": "community-free",
+    "attribution": "MenkyoHub Community",
+    "raw_text": "Is it mandatory to carry a reflective triangle in your vehicle?"
+  }
+]

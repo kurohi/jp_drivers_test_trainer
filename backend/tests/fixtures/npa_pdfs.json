@@ -1,0 +1,102 @@
+[
+  {
+    "prompt_en": "Drivers must stop at red lights. This is a fundamental rule of the road in Japan.",
+    "answer_en": "true",
+    "explanation_en": "Red lights require a complete stop before proceeding.",
+    "theme_slug": "signals",
+    "source_url": "https://www.npa.go.jp/english/licence/license_e.pdf",
+    "license": "public-domain",
+    "attribution": "National Police Agency (NPA)",
+    "raw_text": "Drivers must stop at red lights. This is a fundamental rule of the road in Japan."
+  },
+  {
+    "prompt_en": "Pedestrians have the right of way at crosswalks.",
+    "answer_en": "true",
+    "explanation_en": "Pedestrian priority at crosswalks is a fundamental traffic rule.",
+    "theme_slug": "pedestrian-protection",
+    "source_url": "https://www.npa.go.jp/english/licence/license_e.pdf",
+    "license": "public-domain",
+    "attribution": "National Police Agency (NPA)",
+    "raw_text": "Pedestrians have the right of way at crosswalks."
+  },
+  {
+    "prompt_en": "Drivers must display the novice driver sign for one year after obtaining their license.",
+    "answer_en": "true",
+    "explanation_en": "The novice sign (wakaba mark) is required for first-year drivers.",
+    "theme_slug": "license-system",
+    "source_url": "https://www.npa.go.jp/english/licence/license_e.pdf",
+    "license": "public-domain",
+    "attribution": "National Police Agency (NPA)",
+    "raw_text": "Drivers must display the novice driver sign for one year after obtaining their license."
+  },
+  {
+    "prompt_en": "Overtaking is prohibited at intersections and railroad crossings.",
+    "answer_en": "true",
+    "explanation_en": "Overtaking at these locations is dangerous and prohibited.",
+    "theme_slug": "overtaking-and-passing",
+    "source_url": "https://www.npa.go.jp/english/licence/license_e.pdf",
+    "license": "public-domain",
+    "attribution": "National Police Agency (NPA)",
+    "raw_text": "Overtaking is prohibited at intersections and railroad crossings."
+  },
+  {
+    "prompt_en": "Drivers must yield to emergency vehicles displaying flashing lights and sirens.",
+    "answer_en": "true",
+    "explanation_en": "Emergency vehicles have priority on the road.",
+    "theme_slug": "emergency-vehicle-priority",
+    "source_url": "https://www.npa.go.jp/english/licence/license_e.pdf",
+    "license": "public-domain",
+    "attribution": "National Police Agency (NPA)",
+    "raw_text": "Drivers must yield to emergency vehicles displaying flashing lights and sirens."
+  },
+  {
+    "prompt_en": "The speed limit on general roads is 60 km/h unless otherwise posted.",
+    "answer_en": "true",
+    "explanation_en": "The default speed limit on general roads in Japan is 60 km/h.",
+    "theme_slug": "speed-and-following-distance",
+    "source_url": "https://www.npa.go.jp/english/licence/license_e.pdf",
+    "license": "public-domain",
+    "attribution": "National Police Agency (NPA)",
+    "raw_text": "The speed limit on general roads is 60 km/h unless otherwise posted."
+  },
+  {
+    "prompt_en": "Drivers must not park within 5 meters of a fire hydrant.",
+    "answer_en": "true",
+    "explanation_en": "Fire hydrant access must remain clear at all times.",
+    "theme_slug": "parking-and-stopping",
+    "source_url": "https://www.npa.go.jp/english/licence/license_e.pdf",
+    "license": "public-domain",
+    "attribution": "National Police Agency (NPA)",
+    "raw_text": "Drivers must not park within 5 meters of a fire hydrant."
+  },
+  {
+    "prompt_en": "Drivers must check their blind spots before changing lanes.",
+    "answer_en": "true",
+    "explanation_en": "Blind spot checks are essential for safe lane changes.",
+    "theme_slug": "blind-spots",
+    "source_url": "https://www.npa.go.jp/english/licence/license_e.pdf",
+    "license": "public-domain",
+    "attribution": "National Police Agency (NPA)",
+    "raw_text": "Drivers must check their blind spots before changing lanes."
+  },
+  {
+    "prompt_en": "Drivers must reduce speed when driving in adverse weather conditions.",
+    "answer_en": "true",
+    "explanation_en": "Adverse conditions require reduced speed for safety.",
+    "theme_slug": "adverse-conditions",
+    "source_url": "https://www.npa.go.jp/english/licence/license_e.pdf",
+    "license": "public-domain",
+    "attribution": "National Police Agency (NPA)",
+    "raw_text": "Drivers must reduce speed when driving in adverse weather conditions."
+  },
+  {
+    "prompt_en": "Drivers involved in an accident must stop and remain at the scene.",
+    "answer_en": "true",
+    "explanation_en": "Leaving an accident scene is a hit-and-run offense.",
+    "theme_slug": "accident-response",
+    "source_url": "https://www.npa.go.jp/english/licence/license_e.pdf",
+    "license": "public-domain",
+    "attribution": "National Police Agency (NPA)",
+    "raw_text": "Drivers involved in an accident must stop and remain at the scene."
+  }
+]

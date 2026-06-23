@@ -4,10 +4,13 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from api.routes.skill_test import router as skill_test_router
+from src.api.routes import api_router
+from src.api.routes.rag import router as rag_router
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # TODO: initialize DB, load models, etc.
     yield
 
 
@@ -20,6 +23,10 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(api_router, prefix="/api")
+app.include_router(skill_test_router)
+app.include_router(rag_router)
 
 
 @app.get("/health")

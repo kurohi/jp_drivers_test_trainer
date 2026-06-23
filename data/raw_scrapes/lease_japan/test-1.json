@@ -1,0 +1,82 @@
+[
+  {
+    "prompt_en": "This is a sample test designed to help replicate what you may experience taking the new Japanese driver's license conversion written test which was updated in 2025.",
+    "answer_en": "false",
+    "explanation_en": "Drivers who have held a license for less than one year must display the novicedriversign, regardless of how confident they feel about their driving.",
+    "theme_slug": "signs-and-markings",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "This is a sample test designed to help replicate what you may experience taking the new Japanese driver's license conversion written test which was updated in 2025."
+  },
+  {
+    "prompt_en": "Tokyo+81-(0)3-5449-6061",
+    "answer_en": "false",
+    "explanation_en": "",
+    "theme_slug": "driver-mindset",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Tokyo+81-(0)3-5449-6061"
+  },
+  {
+    "prompt_en": "Nagoya+81-(0)52-973-3913",
+    "answer_en": "false",
+    "explanation_en": "",
+    "theme_slug": "driver-mindset",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Nagoya+81-(0)52-973-3913"
+  },
+  {
+    "prompt_en": "Kobe (Osaka)+81-(0)78-325-3650",
+    "answer_en": "false",
+    "explanation_en": "",
+    "theme_slug": "driver-mindset",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Kobe (Osaka)+81-(0)78-325-3650"
+  },
+  {
+    "prompt_en": "Questions? Call Us!+81-(0)52-973-3913",
+    "answer_en": "false",
+    "explanation_en": "",
+    "theme_slug": "driver-mindset",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Questions? Call Us!+81-(0)52-973-3913"
+  },
+  {
+    "prompt_en": "Open Monday – Friday9:00 ~ 6:00 JST",
+    "answer_en": "false",
+    "explanation_en": "",
+    "theme_slug": "driver-mindset",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Open Monday – Friday9:00 ~ 6:00 JST"
+  },
+  {
+    "prompt_en": "Email[email protected]",
+    "answer_en": "false",
+    "explanation_en": "",
+    "theme_slug": "driver-mindset",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Email[email protected]"
+  },
+  {
+    "prompt_en": "© 2025RNA Group, all rights reserved.",
+    "answer_en": "false",
+    "explanation_en": "",
+    "theme_slug": "driver-mindset",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "© 2025RNA Group, all rights reserved."
+  }
+]

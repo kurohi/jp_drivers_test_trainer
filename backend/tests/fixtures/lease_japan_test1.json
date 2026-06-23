@@ -1,0 +1,202 @@
+[
+  {
+    "prompt_en": "Drivers who have held a license for less than one year must display the novice driver sign, regardless of how confident they feel about their driving.",
+    "answer_en": "true",
+    "explanation_en": "Drivers who have held a license for less than one year must display the novice driver sign, regardless of how confident they feel about their driving.",
+    "theme_slug": "license-system",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Drivers who have held a license for less than one year must display the novice driver sign."
+  },
+  {
+    "prompt_en": "When a pedestrian is crossing at or near an intersection without a designated crosswalk, drivers must slow down, stop, or take other necessary precautions to avoid obstructing the pedestrian's crossing.",
+    "answer_en": "true",
+    "explanation_en": "Drivers should remain mindful of pedestrians while operating their vehicles.",
+    "theme_slug": "pedestrian-protection",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "When a pedestrian is crossing at or near an intersection without a designated crosswalk."
+  },
+  {
+    "prompt_en": "On national expressways, assuming a dry road surface and new tires, the recommended following distance at 100 km/h is approximately 100 meters.",
+    "answer_en": "true",
+    "explanation_en": "This distance between vehicles is necessary to account for the stopping distance.",
+    "theme_slug": "speed-and-following-distance",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "On national expressways, the recommended following distance at 100 km/h is approximately 100 meters."
+  },
+  {
+    "prompt_en": "Drivers must always display the novice sign regardless of confidence.",
+    "answer_en": "true",
+    "explanation_en": "The novice sign must be displayed by all new drivers.",
+    "theme_slug": "license-system",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Drivers must always display the novice sign regardless of confidence."
+  },
+  {
+    "prompt_en": "Overtaking is prohibited on steep slopes.",
+    "answer_en": "false",
+    "explanation_en": "Overtaking is allowed on steep uphill slopes because some vehicles cannot maintain the required speed.",
+    "theme_slug": "overtaking-and-passing",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Overtaking is prohibited on steep slopes."
+  },
+  {
+    "prompt_en": "The stopping distance is 30 meters.",
+    "answer_en": "true",
+    "explanation_en": "The stopping distance at certain speeds is 30 meters.",
+    "theme_slug": "speed-and-following-distance",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "The stopping distance is 30 meters."
+  },
+  {
+    "prompt_en": "A vehicle may stop for up to ten minutes on a road with less than 3.5 meters of clearance.",
+    "answer_en": "false",
+    "explanation_en": "Drivers may park for loading or unloading cargo as long as they remain immediately available to drive.",
+    "theme_slug": "parking-and-stopping",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "A vehicle may stop for up to ten minutes on a road with less than 3.5 meters of clearance."
+  },
+  {
+    "prompt_en": "When your vehicle is in an intersection and you notice an emergency vehicle is approaching from behind, you must stop there immediately.",
+    "answer_en": "false",
+    "explanation_en": "You must not stop immediately. You must avoid intersection, move to the left and stop.",
+    "theme_slug": "emergency-vehicle-priority",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "When your vehicle is in an intersection and you notice an emergency vehicle is approaching from behind, you must stop there immediately."
+  },
+  {
+    "prompt_en": "When passing a railroad crossing where visibility is good or where there is a gateman, you just have to slow down.",
+    "answer_en": "false",
+    "explanation_en": "Even if visibility is good or there is a gateman, you must stop before the railroad crossing.",
+    "theme_slug": "intersections-and-railroad-crossings",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "When passing a railroad crossing where visibility is good or where there is a gateman, you just have to slow down."
+  },
+  {
+    "prompt_en": "When you approach a pedestrian crossing and a pedestrian is crossing on it, you slow down and pass the pedestrian crossing while paying attention not to disturb the passage of the pedestrian.",
+    "answer_en": "false",
+    "explanation_en": "When a pedestrian is crossing a pedestrian crossing, you must stop before the pedestrian crossing and yield to the pedestrian.",
+    "theme_slug": "pedestrian-protection",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "When you approach a pedestrian crossing and a pedestrian is crossing on it."
+  },
+  {
+    "prompt_en": "When the surface of the roads changes, the braking distance will also change even in a same speed.",
+    "answer_en": "true",
+    "explanation_en": "Correct",
+    "theme_slug": "speed-and-following-distance",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "When the surface of the roads changes, the braking distance will also change even in a same speed."
+  },
+  {
+    "prompt_en": "Drivers must always stop at railroad crossings regardless of visibility.",
+    "answer_en": "true",
+    "explanation_en": "Drivers must always stop at railroad crossings.",
+    "theme_slug": "intersections-and-railroad-crossings",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "Drivers must always stop at railroad crossings regardless of visibility."
+  },
+  {
+    "prompt_en": "Drivers must always yield to pedestrians at crosswalks.",
+    "answer_en": "true",
+    "explanation_en": "Drivers must always yield to pedestrians.",
+    "theme_slug": "pedestrian-protection",
+    "source_url": "https://raw.githubusercontent.com/kevincobain2000/japan-drivers-license-practice-test-questions-english/master/questions.tsv",
+    "license": "open-source",
+    "attribution": "kevincobain2000/japan-drivers-license-practice-test-questions-english (MIT)",
+    "raw_text": "Drivers must always yield to pedestrians at crosswalks."
+  },
+  {
+    "prompt_en": "Drivers may stop at the intersection if permitted by the signal.",
+    "answer_en": "true",
+    "explanation_en": "Drivers may stop at intersections when the signal allows.",
+    "theme_slug": "intersections-and-railroad-crossings",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Drivers may stop at the intersection if permitted by the signal."
+  },
+  {
+    "prompt_en": "Drivers must not park within 5 meters of a fire hydrant.",
+    "answer_en": "true",
+    "explanation_en": "Parking near fire hydrants is prohibited.",
+    "theme_slug": "parking-and-stopping",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Drivers must not park within 5 meters of a fire hydrant."
+  },
+  {
+    "prompt_en": "Drivers are not allowed to park within 10 meters of a crosswalk.",
+    "answer_en": "true",
+    "explanation_en": "Parking near crosswalks is prohibited.",
+    "theme_slug": "parking-and-stopping",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Drivers are not allowed to park within 10 meters of a crosswalk."
+  },
+  {
+    "prompt_en": "Drivers must never exceed the speed limit even when overtaking.",
+    "answer_en": "true",
+    "explanation_en": "Speed limits must always be observed.",
+    "theme_slug": "speed-and-following-distance",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Drivers must never exceed the speed limit even when overtaking."
+  },
+  {
+    "prompt_en": "Drivers must only use headlights at night.",
+    "answer_en": "false",
+    "explanation_en": "Headlights should also be used in adverse conditions.",
+    "theme_slug": "adverse-conditions",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Drivers must only use headlights at night."
+  },
+  {
+    "prompt_en": "Drivers must check their blind spots before changing lanes.",
+    "answer_en": "true",
+    "explanation_en": "Blind spot checks are essential for safe lane changes.",
+    "theme_slug": "blind-spots",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Drivers must check their blind spots before changing lanes."
+  },
+  {
+    "prompt_en": "Drivers should always signal at least 30 meters before turning.",
+    "answer_en": "true",
+    "explanation_en": "Signal timing is important for safety.",
+    "theme_slug": "signals",
+    "source_url": "https://leasejapan.com/en/license-conversion/written-test-guide/test-1/",
+    "license": "rewrite-required",
+    "attribution": "Lease Japan",
+    "raw_text": "Drivers should always signal at least 30 meters before turning."
+  }
+]

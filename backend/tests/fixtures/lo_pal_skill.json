@@ -1,0 +1,102 @@
+[
+  {
+    "prompt_en": "When driving in Japan, you must carry your driver's license at all times.",
+    "answer_en": "true",
+    "explanation_en": "License possession is required while operating a vehicle.",
+    "theme_slug": "license-system",
+    "source_url": "https://lo-pal.com/driving-guide-japan",
+    "license": "rewrite-required",
+    "attribution": "Lo-PAL Practical Guide",
+    "raw_text": "When driving in Japan, you must carry your driver's license at all times."
+  },
+  {
+    "prompt_en": "Drivers must signal before changing lanes on any road.",
+    "answer_en": "true",
+    "explanation_en": "Signaling is required for all lane changes.",
+    "theme_slug": "signals",
+    "source_url": "https://lo-pal.com/driving-guide-japan",
+    "license": "rewrite-required",
+    "attribution": "Lo-PAL Practical Guide",
+    "raw_text": "Drivers must signal before changing lanes on any road."
+  },
+  {
+    "prompt_en": "Pedestrians have the right of way at marked crosswalks.",
+    "answer_en": "true",
+    "explanation_en": "Pedestrian priority at crosswalks is a fundamental rule.",
+    "theme_slug": "pedestrian-protection",
+    "source_url": "https://lo-pal.com/driving-guide-japan",
+    "license": "rewrite-required",
+    "attribution": "Lo-PAL Practical Guide",
+    "raw_text": "Pedestrians have the right of way at marked crosswalks."
+  },
+  {
+    "prompt_en": "You must come to a complete stop at all railroad crossings.",
+    "answer_en": "true",
+    "explanation_en": "Railroad crossings require a complete stop.",
+    "theme_slug": "intersections-and-railroad-crossings",
+    "source_url": "https://lo-pal.com/driving-guide-japan",
+    "license": "rewrite-required",
+    "attribution": "Lo-PAL Practical Guide",
+    "raw_text": "You must come to a complete stop at all railroad crossings."
+  },
+  {
+    "prompt_en": "The following distance should be at least 2 seconds under normal conditions.",
+    "answer_en": "true",
+    "explanation_en": "The 2-second rule provides adequate reaction time.",
+    "theme_slug": "speed-and-following-distance",
+    "source_url": "https://lo-pal.com/driving-guide-japan",
+    "license": "rewrite-required",
+    "attribution": "Lo-PAL Practical Guide",
+    "raw_text": "The following distance should be at least 2 seconds under normal conditions."
+  },
+  {
+    "prompt_en": "Drivers must yield to emergency vehicles with active sirens and lights.",
+    "answer_en": "true",
+    "explanation_en": "Emergency vehicles have priority on the road.",
+    "theme_slug": "emergency-vehicle-priority",
+    "source_url": "https://lo-pal.com/driving-guide-japan",
+    "license": "rewrite-required",
+    "attribution": "Lo-PAL Practical Guide",
+    "raw_text": "Drivers must yield to emergency vehicles with active sirens and lights."
+  },
+  {
+    "prompt_en": "Overtaking is prohibited on solid white lines.",
+    "answer_en": "true",
+    "explanation_en": "Solid white lines indicate no overtaking.",
+    "theme_slug": "overtaking-and-passing",
+    "source_url": "https://lo-pal.com/driving-guide-japan",
+    "license": "rewrite-required",
+    "attribution": "Lo-PAL Practical Guide",
+    "raw_text": "Overtaking is prohibited on solid white lines."
+  },
+  {
+    "prompt_en": "Drivers must check blind spots before every lane change.",
+    "answer_en": "true",
+    "explanation_en": "Blind spot checks are essential for safe lane changes.",
+    "theme_slug": "blind-spots",
+    "source_url": "https://lo-pal.com/driving-guide-japan",
+    "license": "rewrite-required",
+    "attribution": "Lo-PAL Practical Guide",
+    "raw_text": "Drivers must check blind spots before every lane change."
+  },
+  {
+    "prompt_en": "Reduce speed when driving in rain to prevent hydroplaning.",
+    "answer_en": "true",
+    "explanation_en": "Reduced speed in rain improves traction.",
+    "theme_slug": "adverse-conditions",
+    "source_url": "https://lo-pal.com/driving-guide-japan",
+    "license": "rewrite-required",
+    "attribution": "Lo-PAL Practical Guide",
+    "raw_text": "Reduce speed when driving in rain to prevent hydroplaning."
+  },
+  {
+    "prompt_en": "Drivers must remain at the scene of an accident and call the police.",
+    "answer_en": "true",
+    "explanation_en": "Leaving an accident scene is a hit-and-run offense.",
+    "theme_slug": "accident-response",
+    "source_url": "https://lo-pal.com/driving-guide-japan",
+    "license": "rewrite-required",
+    "attribution": "Lo-PAL Practical Guide",
+    "raw_text": "Drivers must remain at the scene of an accident."
+  }
+]

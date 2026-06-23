@@ -10,7 +10,7 @@
   },
   "pageTitle": {
     "home": "Painel",
-    "study": "Estudo",
+    "study": "Estudo por Tema",
     "mockTest": "Simulado",
     "skillTest": "Teste de Habilidade",
     "teacher": "Professor",
@@ -26,7 +26,10 @@
       "next": "Próximo",
       "previous": "Anterior",
       "confirm": "Confirmar",
-      "showExplanation": "Mostrar explicação"
+      "showExplanation": "Mostrar explicação",
+      "hideExplanation": "Ocultar explicação",
+      "true": "Verdadeiro",
+      "false": "Falso"
     },
     "difficulty": {
       "beginner": "Iniciante",
@@ -35,5 +38,28 @@
       "hard": "Difícil",
       "expert": "Especialista"
     }
+  },
+  "study": {
+    "themeGridTitle": "Escolha um Tema",
+    "themeGridSubtitle": "Navegue pelos 22 temas oficiais e pratique questões no seu ritmo.",
+    "questionsCount": "{{count}} questões",
+    "questionsCount_one": "{{count}} questão",
+    "questionsCount_other": "{{count}} questões",
+    "noThemes": "Nenhum tema disponível",
+    "loadingThemes": "Carregando temas...",
+    "questionPage": "Questão {{current}} de {{total}}",
+    "page": "Página {{current}} de {{total}}",
+    "noQuestions": "Nenhuma questão disponível para este tema.",
+    "loadingQuestions": "Carregando questões...",
+    "themeNotFound": "Tema não encontrado.",
+    "answerPrompt": "Esta afirmação é verdadeira ou falsa?",
+    "selectAnswerFirst": "Selecione Verdadeiro ou Falso primeiro, depois revele a explicação.",
+    "yourAnswer": "Sua resposta: {{answer}}",
+    "correctAnswer": "Resposta correta: {{answer}}",
+    "correct": "Correto!",
+    "incorrect": "Incorreto",
+    "explanation": "Explicação",
+    "trickyBadge": "Pegadinha",
+    "backToThemes": "Voltar aos temas"
   }
 }

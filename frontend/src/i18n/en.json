@@ -10,7 +10,7 @@
   },
   "pageTitle": {
     "home": "Dashboard",
-    "study": "Study",
+    "study": "Study by Theme",
     "mockTest": "Mock Test",
     "skillTest": "Skill Test",
     "teacher": "Teacher",
@@ -26,7 +26,10 @@
       "next": "Next",
       "previous": "Previous",
       "confirm": "Confirm",
-      "showExplanation": "Show explanation"
+      "showExplanation": "Show explanation",
+      "hideExplanation": "Hide explanation",
+      "true": "True",
+      "false": "False"
     },
     "difficulty": {
       "beginner": "Beginner",
@@ -35,5 +38,28 @@
       "hard": "Hard",
       "expert": "Expert"
     }
+  },
+  "study": {
+    "themeGridTitle": "Choose a Theme",
+    "themeGridSubtitle": "Browse all 22 official themes and practice questions at your own pace.",
+    "questionsCount": "{{count}} questions",
+    "questionsCount_one": "{{count}} question",
+    "questionsCount_other": "{{count}} questions",
+    "noThemes": "No themes available",
+    "loadingThemes": "Loading themes...",
+    "questionPage": "Question {{current}} of {{total}}",
+    "page": "Page {{current}} of {{total}}",
+    "noQuestions": "No questions available for this theme.",
+    "loadingQuestions": "Loading questions...",
+    "themeNotFound": "Theme not found.",
+    "answerPrompt": "Is this statement true or false?",
+    "selectAnswerFirst": "Select True or False first, then reveal the explanation.",
+    "yourAnswer": "Your answer: {{answer}}",
+    "correctAnswer": "Correct answer: {{answer}}",
+    "correct": "Correct!",
+    "incorrect": "Incorrect",
+    "explanation": "Explanation",
+    "trickyBadge": "Tricky",
+    "backToThemes": "Back to themes"
   }
 }
