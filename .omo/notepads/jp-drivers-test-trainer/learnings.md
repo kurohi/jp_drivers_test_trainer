@@ -23,3 +23,11 @@
 
 ### Test results
 - All 134 tests pass (4 new ingest tests + 130 existing)
+
+## 2026-06-23: Agent model config fix
+
+- All `opencode-go/*` and `google/*` models in `~/.config/opencode/oh-my-openagent.json` were out of tokens.
+- Replaced ALL with `ollama/qwen3.6-256k` — the local Ollama model was already available.
+- This affects ALL subagents (explore, librarian, oracle, sisyphus-junior, etc.) and ALL categories (visual-engineering, deep, quick, writing, etc.).
+- Task categories now work without remote API tokens.
+- If you ever want to use remote models again, edit `~/.config/opencode/oh-my-openagent.json` and swap individual agent/category model IDs.

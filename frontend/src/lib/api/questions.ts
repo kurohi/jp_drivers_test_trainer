@@ -14,6 +14,7 @@ import {
   mockQuestionDetails,
   mockCountByTheme,
 } from "./mock";
+import { request } from "./fetch";
 
 const isMock = import.meta.env.VITE_API_MOCK === "true";
 
@@ -55,17 +56,13 @@ export const questionsApi = {
       });
     }
 
-    // Live mode — wired in T22
     const params = new URLSearchParams({
       theme_id: String(themeId),
-      page: String(page),
-      page_size: String(pageSize),
+      limit: String(pageSize),
+      offset: String((page - 1) * pageSize),
     });
-    const res = await fetch(`/api/questions?${params}`);
-    if (!res.ok)
-      throw new Error(`Failed to fetch questions: ${res.statusText}`);
-    const items: QuestionListItem[] = await res.json();
-    const total = mockCountByTheme(themeId); // placeholder — T22 will wire real count
+    const items = await request<QuestionListItem[]>(`/api/questions?${params}`);
+    const total = mockCountByTheme(themeId);
     return {
       items,
       total,
@@ -86,10 +83,6 @@ export const questionsApi = {
       return delay(detail, 300); // slightly longer to simulate detail fetch
     }
 
-    const res = await fetch(`/api/questions/${questionId}`);
-    if (res.status === 404) return null;
-    if (!res.ok)
-      throw new Error(`Failed to fetch question detail: ${res.statusText}`);
-    return res.json();
+    return request<QuestionDetail>(`/api/questions/${questionId}`);
   },
 };

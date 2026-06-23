@@ -219,3 +219,164 @@ export const mockQuestionDetails: Map<number, QuestionDetail> =
 export function mockCountByTheme(themeId: number): number {
   return mockQuestionList.filter((q) => q.theme_id === themeId).length;
 }
+
+// ─── Mock Test Attempt Management ──────────────────────────────────────────
+
+import type {
+  AttemptStartIn,
+  AttemptSubmitIn,
+  AttemptResultOut,
+  AttemptAnswerOut,
+} from "@/types";
+
+export interface MockTestStartResponse {
+  attempt_id: number;
+  questions: QuestionListItem[];
+  time_limit_seconds: number;
+}
+
+export interface MockTestTimeoutResponse {
+  remaining_seconds: number;
+  timed_out: boolean;
+}
+
+/** In-memory store for active mock test attempts. */
+interface MockAttempt {
+  attempt_id: number;
+  questions: QuestionListItem[];
+  time_limit_seconds: number;
+  started_at: number;
+  difficulty: number;
+}
+
+const mockAttempts = new Map<number, MockAttempt>();
+let nextAttemptId = 1;
+
+/** Deterministic shuffle using a simple LCG. */
+function seededShuffle<T>(arr: T[], seed: number): T[] {
+  const result = [...arr];
+  let s = seed || 1;
+  for (let i = result.length - 1; i > 0; i--) {
+    s = (s * 1103515245 + 12345) & 0x7fffffff;
+    const j = s % (i + 1);
+    [result[i], result[j]] = [result[j], result[i]];
+  }
+  return result;
+}
+
+/** Start a mock test attempt — generates 50 questions from the pool. */
+export function mockStartAttempt(
+  payload: AttemptStartIn,
+): MockTestStartResponse {
+  const attemptId = nextAttemptId++;
+  const seed = payload.seed ?? attemptId * 1000;
+
+  // Cycle through the question pool to get 50 questions
+  const pool = seededShuffle(mockQuestionList, seed);
+  const questions: QuestionListItem[] = [];
+  let idx = 0;
+  while (questions.length < payload.question_count) {
+    const q = pool[idx % pool.length];
+    // Avoid duplicates — if pool is large enough
+    if (!questions.some((qq) => qq.id === q.id)) {
+      questions.push({ ...q });
+    }
+    idx++;
+    // Safety: if pool is smaller than question_count, allow duplicates
+    if (idx > pool.length * 3) {
+      questions.push({ ...pool[idx % pool.length], id: -(idx) });
+      idx++;
+    }
+  }
+
+  mockAttempts.set(attemptId, {
+    attempt_id: attemptId,
+    questions,
+    time_limit_seconds: payload.time_limit_seconds,
+    started_at: Date.now(),
+    difficulty: payload.tricky_ratio,
+  });
+
+  return {
+    attempt_id: attemptId,
+    questions,
+    time_limit_seconds: payload.time_limit_seconds,
+  };
+}
+
+/** Submit a mock test attempt — calculates results. */
+export function mockSubmitAttempt(
+  attemptId: number,
+  payload: AttemptSubmitIn,
+): AttemptResultOut | null {
+  const attempt = mockAttempts.get(attemptId);
+  if (!attempt) return null;
+
+  const answers: AttemptAnswerOut[] = attempt.questions.map((q) => {
+    const userAnswerEntry = payload.answers.find(
+      (a) => a.question_id === q.id,
+    );
+    const userAnswer = (userAnswerEntry?.user_answer ?? "false") as "true" | "false";
+    const detail = mockQuestionDetails.get(q.id);
+    const correctAnswer = (detail?.answer_en ?? "true") as "true" | "false";
+    const isCorrect = userAnswer === correctAnswer;
+
+    return {
+      question_id: q.id,
+      is_correct: isCorrect,
+      user_answer: userAnswer,
+      correct_answer: correctAnswer,
+      explanation_en: detail?.explanation_en ?? "",
+      explanation_pt: detail?.explanation_pt ?? "",
+    };
+  });
+
+  const score = answers.filter((a) => a.is_correct).length;
+  const maxScore = attempt.questions.length;
+  const boundaryScore = Math.ceil(maxScore * 0.9); // 90% = 45/50
+  const passed = score >= boundaryScore;
+
+  return {
+    attempt_id: attemptId,
+    score,
+    max_score: maxScore,
+    passed,
+    tricky_ratio_actual: attempt.difficulty,
+    boundary_score: boundaryScore,
+    answers,
+  };
+}
+
+/** Check timeout status for a mock test attempt. */
+export function mockGetTimeout(
+  attemptId: number,
+): MockTestTimeoutResponse | null {
+  const attempt = mockAttempts.get(attemptId);
+  if (!attempt) return null;
+
+  const elapsed = Math.floor((Date.now() - attempt.started_at) / 1000);
+  const remaining = Math.max(0, attempt.time_limit_seconds - elapsed);
+  const timedOut = remaining <= 0;
+
+  return {
+    remaining_seconds: remaining,
+    timed_out: timedOut,
+  };
+}
+
+/** Get the correct answers for a mock attempt (test helper). */
+export function mockGetCorrectAnswers(
+  attemptId: number,
+): Record<number, "true" | "false"> | null {
+  const attempt = mockAttempts.get(attemptId);
+  if (!attempt) return null;
+
+  const result: Record<number, "true" | "false"> = {};
+  for (const q of attempt.questions) {
+    const detail = mockQuestionDetails.get(q.id);
+    if (detail) {
+      result[q.id] = detail.answer_en as "true" | "false";
+    }
+  }
+  return result;
+}
