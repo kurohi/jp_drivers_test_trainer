@@ -8,7 +8,7 @@ from typing import Optional
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from models.attempt import Attempt, AttemptAnswer
+from src.models.attempt import Attempt, AttemptAnswer
 
 
 class AttemptRepo:

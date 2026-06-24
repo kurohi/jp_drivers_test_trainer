@@ -21,14 +21,16 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import TYPE_CHECKING, AsyncIterator
 
+from tqdm import tqdm
+
 from sqlalchemy import select, delete
 from sqlalchemy.ext.asyncio import AsyncSession, async_sessionmaker, create_async_engine
-from db import PROJECT_ROOT
-from llm.exceptions import OllamaUnavailableError
-from models.rag_chunk import RagDocument, RagChunk
-from rag.chunker import SemanticChunker
-from rag.embedder import Embedder
-from rag.vector_store import VectorStore
+from src.db import PROJECT_ROOT
+from src.llm.exceptions import OllamaUnavailableError
+from src.models.rag_chunk import RagDocument, RagChunk
+from src.rag.chunker import SemanticChunker
+from src.rag.embedder import Embedder
+from src.rag.vector_store import VectorStore
 
 if TYPE_CHECKING:
     pass
@@ -214,8 +216,10 @@ async def ingest_documents(
         sm = session_maker
         dp = db_path
     else:
-        sm = async_session_maker
         dp = PROJECT_ROOT / "data" / "jp_drivers.sqlite"
+        db_url = f"sqlite+aiosqlite:///{dp}"
+        engine = create_async_engine(db_url, echo=False)
+        sm = async_sessionmaker(bind=engine, class_=AsyncSession, expire_on_commit=False)
 
     docs_ingested = 0
     chunks_created = 0
@@ -223,6 +227,7 @@ async def ingest_documents(
     vec_rows: list[tuple[int, list[float]]] = []
     old_vec_rowids: list[int] = []
 
+    pbar = tqdm(total=len(raw_docs), desc="Ingesting documents", unit="doc")
     async with sm() as session:
         for raw_doc in raw_docs:
             old_ids = await _delete_existing_doc(session, raw_doc.source_url, None)
@@ -230,6 +235,7 @@ async def ingest_documents(
 
             chunks = await chunker.chunk(raw_doc.text)
             if not chunks:
+                pbar.update(1)
                 continue
 
             doc = RagDocument(
@@ -245,6 +251,7 @@ async def ingest_documents(
             try:
                 embeddings = await embedder.embed_batch(chunk_texts)
             except OllamaUnavailableError:
+                pbar.close()
                 await session.rollback()
                 raise
 
@@ -260,8 +267,10 @@ async def ingest_documents(
                 chunks_created += 1
 
             docs_ingested += 1
+            pbar.update(1)
 
         await session.commit()
+    pbar.close()
 
     # Phase 2: sync — upsert vectors (avoids aiosqlite lock conflict)
     vec_conn = _get_vec_conn(dp)

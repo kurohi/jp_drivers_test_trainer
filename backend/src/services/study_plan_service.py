@@ -10,8 +10,8 @@ from typing import Any
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from models.question import Question
-from models.theme import Theme
+from src.models.question import Question
+from src.models.theme import Theme
 from src.api.repositories.attempt_repo import AttemptRepo
 from src.api.repositories.study_plan_repo import StudyPlanRepo
 from src.api.repositories.theme_repo import ThemeRepo

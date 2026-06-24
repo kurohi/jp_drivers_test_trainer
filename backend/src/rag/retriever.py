@@ -10,9 +10,9 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
 
-from models.rag_chunk import RagChunk, RagDocument
-from rag.embedder import Embedder
-from rag.vector_store import VectorStore
+from src.models.rag_chunk import RagChunk, RagDocument
+from src.rag.embedder import Embedder
+from src.rag.vector_store import VectorStore
 
 if TYPE_CHECKING:
     pass

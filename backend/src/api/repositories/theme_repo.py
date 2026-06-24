@@ -7,7 +7,7 @@ from typing import Optional
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from models.theme import Theme
+from src.models.theme import Theme
 
 
 class ThemeRepo:

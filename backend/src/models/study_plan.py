@@ -5,7 +5,7 @@ from datetime import datetime
 from sqlalchemy import TEXT, DateTime, String
 from sqlalchemy.orm import Mapped, mapped_column
 
-from db import Base
+from src.db import Base
 
 
 class StudyPlan(Base):

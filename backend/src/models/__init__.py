@@ -1,10 +1,10 @@
 # Models package — export all ORM models for convenience.
-from models.attempt import Attempt, AttemptAnswer
-from models.question import Question
-from models.rag_chunk import RagChunk, RagDocument
-from models.skill_module import SkillModule
-from models.study_plan import StudyPlan
-from models.theme import Theme
+from .attempt import Attempt, AttemptAnswer
+from .question import Question
+from .rag_chunk import RagChunk, RagDocument
+from .skill_module import SkillModule
+from .study_plan import StudyPlan
+from .theme import Theme
 
 __all__ = [
     "Theme",

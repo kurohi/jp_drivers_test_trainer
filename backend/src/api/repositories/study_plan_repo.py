@@ -7,7 +7,7 @@ from typing import Optional
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from models.study_plan import StudyPlan
+from src.models.study_plan import StudyPlan
 
 
 class StudyPlanRepo:

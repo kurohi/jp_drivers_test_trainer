@@ -8,7 +8,7 @@ from typing import Optional
 from sqlalchemy import func, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from models.question import Question
+from src.models.question import Question
 
 
 class QuestionRepo:

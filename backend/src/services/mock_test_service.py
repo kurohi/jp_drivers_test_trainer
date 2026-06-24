@@ -7,11 +7,11 @@ from typing import Optional
 
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from models.attempt import AttemptAnswer
-from models.question import Question
-from repositories.attempt_repo import AttemptRepo
-from repositories.question_repo import QuestionRepo
-from schemas.attempt import (
+from src.models.attempt import AttemptAnswer
+from src.models.question import Question
+from src.repositories.attempt_repo import AttemptRepo
+from src.repositories.question_repo import QuestionRepo
+from src.schemas.attempt import (
     AnswerItem,
     AttemptAnswerOut,
     AttemptResultOut,

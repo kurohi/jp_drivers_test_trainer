@@ -10,9 +10,9 @@ from fastapi.responses import Response
 from pydantic import BaseModel
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from db import get_session
-from models.skill_module import SkillModule
-from api.repositories.skill_repo import SkillRepo
+from src.db import get_session
+from src.models.skill_module import SkillModule
+from src.api.repositories.skill_repo import SkillRepo
 
 router = APIRouter(prefix="/api/skill-test", tags=["skill-test"])
 

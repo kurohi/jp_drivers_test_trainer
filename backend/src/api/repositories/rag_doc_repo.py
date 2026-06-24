@@ -7,7 +7,7 @@ from typing import Optional
 from sqlalchemy import delete, select
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from models.rag_chunk import RagDocument, RagChunk
+from src.models.rag_chunk import RagDocument, RagChunk
 
 
 class RagDocRepo:

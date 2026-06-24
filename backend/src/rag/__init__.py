@@ -6,7 +6,7 @@ Components:
 """
 from __future__ import annotations
 
-from rag.embedder import Embedder
-from rag.vector_store import VectorStore
+from src.rag.embedder import Embedder
+from src.rag.vector_store import VectorStore
 
 __all__ = ["Embedder", "VectorStore"]

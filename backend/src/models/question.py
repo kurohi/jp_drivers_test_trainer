@@ -6,7 +6,7 @@ from typing import TYPE_CHECKING, Optional
 from sqlalchemy import BOOLEAN, DateTime, ForeignKey, Integer, String, Text
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from db import Base
+from src.db import Base
 
 if TYPE_CHECKING:
     from models.attempt import AttemptAnswer
