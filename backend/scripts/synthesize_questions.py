@@ -17,6 +17,8 @@ import random
 from pathlib import Path
 from typing import Any
 
+from tqdm import tqdm
+
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 RAW_DIR = PROJECT_ROOT / "data" / "raw_scrapes" / "synthesized"
 
@@ -773,7 +775,8 @@ def synthesize_questions(
 
     all_questions: list[dict[str, Any]] = []
 
-    for i, theme_slug in enumerate(THEME_SLUGS):
+    pbar = tqdm(THEME_SLUGS, desc="Synthesizing", unit="theme")
+    for i, theme_slug in enumerate(pbar):
         n = questions_per_theme + (1 if i < remainder else 0)
         n_tricky = tricky_per_theme + (1 if i < remainder else 0)
         n_normal = n - n_tricky

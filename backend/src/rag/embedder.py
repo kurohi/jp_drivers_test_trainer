@@ -15,6 +15,8 @@ import hashlib
 from collections import OrderedDict
 from typing import Protocol, TypeVar
 
+from tqdm import tqdm
+
 T = TypeVar("T")
 
 
@@ -133,8 +135,11 @@ class Embedder:
             List of 768-dim embedding lists, one per input text.
         """
         results: list[list[float]] = []
+        pbar = tqdm(total=len(texts), desc="Embedding", unit="chunk", leave=False)
         for i, text in enumerate(texts):
             results.append(await self.embed(text))
+            pbar.update(1)
             if self._batch_delay > 0 and i < len(texts) - 1:
                 await asyncio.sleep(self._batch_delay)
+        pbar.close()
         return results

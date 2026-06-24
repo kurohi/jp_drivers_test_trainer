@@ -489,6 +489,7 @@ dependencies = [
     { name = "rapidfuzz" },
     { name = "sqlalchemy" },
     { name = "sqlite-vec" },
+    { name = "tqdm" },
     { name = "uvicorn", extra = ["standard"] },
 ]
 
@@ -533,6 +534,7 @@ requires-dist = [
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.2" },
     { name = "sqlalchemy", specifier = ">=2" },
     { name = "sqlite-vec", specifier = ">=0.1.0" },
+    { name = "tqdm", specifier = ">=4.66" },
     { name = "uvicorn", extras = ["standard"], specifier = ">=0.27.0" },
 ]
 provides-extras = ["dev"]

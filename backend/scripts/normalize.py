@@ -22,6 +22,7 @@ from pathlib import Path
 from typing import Any
 
 from rapidfuzz import fuzz
+from tqdm import tqdm
 
 PROJECT_ROOT = Path(__file__).parent.parent.parent
 DATA_DIR = PROJECT_ROOT / "data"
@@ -273,13 +274,16 @@ async def translate_questions(
     batch_size: int = 5,
 ) -> list[ParsedQuestion]:
     """Translate questions to PT using Ollama."""
+    pbar = tqdm(total=len(questions), desc="Translating", unit="q")
     for i in range(0, len(questions), batch_size):
         batch = questions[i:i + batch_size]
         tasks = []
         for q in batch:
             tasks.append(_translate_single(q, ollama))
         await asyncio.gather(*tasks, return_exceptions=True)
+        pbar.update(len(batch))
         await asyncio.sleep(0.5)  # Rate limit
+    pbar.close()
 
     return questions
 
@@ -329,6 +333,8 @@ async def paraphrase_questions(
     batch_size: int = 5,
 ) -> list[ParsedQuestion]:
     """Paraphrase rewrite-required questions."""
+    rewrite_count = sum(1 for q in questions if q.license == "rewrite-required")
+    pbar = tqdm(total=rewrite_count, desc="Paraphrasing", unit="q")
     for i in range(0, len(questions), batch_size):
         batch = questions[i:i + batch_size]
         tasks = []
@@ -337,7 +343,9 @@ async def paraphrase_questions(
                 tasks.append(_paraphrase_single(q, ollama))
         if tasks:
             await asyncio.gather(*tasks, return_exceptions=True)
+            pbar.update(len(tasks))
         await asyncio.sleep(0.5)
+    pbar.close()
 
     return questions
 
