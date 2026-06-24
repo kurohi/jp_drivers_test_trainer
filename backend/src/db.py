@@ -30,12 +30,17 @@ engine = create_async_engine(DB_URL, echo=False)
 
 # sqlite-vec extension must be loaded on EVERY connection.
 # The sync_engine "connect" event fires for each connection created.
+# We use db_api_conn.run_async() because aiosqlite's enable_load_extension
+# is async and the raw sqlite3.Connection is thread-locked.
 @event.listens_for(engine.sync_engine, "connect")
 def _load_vec_on_connect(db_api_conn, connection_record) -> None:  # type: ignore[arg-type]
     import sqlite_vec
 
-    db_api_conn.enable_load_extension(True)
-    db_api_conn.load_extension(sqlite_vec.loadable_path())
+    async def _load(conn):
+        await conn.enable_load_extension(True)
+        await conn.load_extension(sqlite_vec.loadable_path())
+
+    db_api_conn.run_async(_load)
 
 
 async_session_maker = async_sessionmaker(

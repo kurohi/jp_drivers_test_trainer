@@ -1,8 +1,8 @@
 # Ollama LLM configuration
 ollama_url: "http://localhost:11434"
-ollama_chat_model: "qwen3.6-256k"
+ollama_chat_model: "gemma4-256k"
 ollama_embed_model: "nomic-embed-text"
-ollama_timeout_seconds: 60.0
+ollama_timeout_seconds: 180.0
 
 # Database
 db_url: "sqlite+aiosqlite:///data/jp_drivers.sqlite"

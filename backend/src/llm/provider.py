@@ -1,6 +1,7 @@
 """Ollama LLM client facade."""
 
 import asyncio
+import json
 import re
 from typing import Any
 
@@ -25,6 +26,23 @@ class OllamaClient:
         if self._client is None:
             self._client = httpx.AsyncClient(timeout=self.timeout)
         return self._client
+
+    def _strip_think_blocks(self, content: str) -> str:
+        return re.sub(
+            r"\s*<think>.*?</think>",
+            "",
+            content,
+            flags=re.DOTALL,
+        ).strip()
+
+    def _parse_ollama_response(self, body: str) -> str:
+        try:
+            data = json.loads(body)
+            return data["message"]["content"]
+        except json.JSONDecodeError:
+            lines = [line for line in body.strip().split("\n") if line.strip()]
+            last = json.loads(lines[-1])
+            return last["message"]["content"]
 
     async def chat(
         self,
@@ -51,12 +69,13 @@ class OllamaClient:
             "messages": messages,
             "temperature": temperature,
             "num_predict": num_predict,
+            "stream": False,
         }
 
         last_error: Exception | None = None
-        for attempt in range(3):  # initial + 2 retries
+        for attempt in range(3):
             if attempt > 0:
-                await asyncio.sleep(0.5 * attempt)  # 0.5s, then 1.0s
+                await asyncio.sleep(0.5 * attempt)
             try:
                 client = await self._get_client()
                 response = await client.post(
@@ -71,15 +90,9 @@ class OllamaClient:
                     )
                     continue
                 response.raise_for_status()
-                data = response.json()
-                content: str = data["message"]["content"]
-                # Strip境外 think blocks
-                content = re.sub(
-                    r"\s*<think>.*?</think>",
-                    "",
-                    content,
-                    flags=re.DOTALL,
-                ).strip()
+                body = response.text
+                content = self._parse_ollama_response(body)
+                content = self._strip_think_blocks(content)
                 return content
             except httpx.ConnectError as e:
                 raise OllamaUnavailableError(
@@ -93,7 +106,6 @@ class OllamaClient:
                     f"Ollama timed out after {self.timeout}s: {e}"
                 ) from e
 
-        # After 2 retries on 5xx
         raise OllamaResponseError(
             f"Ollama returned error after retries: {last_error}"
         ) from last_error
