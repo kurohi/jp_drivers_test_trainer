@@ -1,7 +1,7 @@
 {
   "name": "jp-drivers-test-trainer-frontend",
   "version": "0.1.0",
-  "description": "Japanese Driver's License Test Trainer Frontend",
+  "description": "外免切替 — Bilingual EN/PT study app for the Japanese driver's license written exam (gaimen kirikae) and closed-course skill test. React 19 frontend with Ollama RAG teacher.",
   "private": true,
   "type": "module",
   "scripts": {

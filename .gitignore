@@ -42,6 +42,7 @@ Thumbs.db
 data/*.db
 data/*.sqlite
 data/*.sqlite3
+data/*.jsonl
 backend/data/*.sqlite
 backend/data/*.db
 

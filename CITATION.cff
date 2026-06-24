@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software in your research or study, please cite it."
+title: "JP Drivers Test Trainer — 外免切替 学習アプリ"
+abstract: "Bilingual (EN/PT) offline-first study tool for the Japanese driver's license written exam (gaimen kirikae) and closed-course practical skill test. Features 1081+ true/false questions, timed mock exams, RAG-powered AI teacher via local Ollama, and maneuver walkthroughs."
+authors:
+  - name: "Kurohi"
+    email: "kurohi@users.noreply.github.com"
+    url: "https://github.com/kurohi"
+repository-code: "https://github.com/kurohi/jp_drivers_test_trainer"
+license: "MIT"
+keywords:
+  - "gaimen kirikae"
+  - "外免切替"
+  - "japanese driver's license"
+  - "driving test"
+  - "jlpt"
+  - "study app"
+  - "ollama"
+  - "rag"
+  - "fastapi"
+  - "react"
+  - "sqlite-vec"
+  - "offline-first"
+type: software
