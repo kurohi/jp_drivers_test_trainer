@@ -59,6 +59,9 @@ class AttemptAnswerOut(BaseModel):
     is_correct: bool
     user_answer: Literal["true", "false"]
     correct_answer: Literal["true", "false"]
+    prompt_en: str = ""
+    prompt_pt: str = ""
+    image_url: str | None = None
     explanation_en: str
     explanation_pt: str
 

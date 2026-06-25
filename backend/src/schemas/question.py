@@ -20,6 +20,7 @@ class QuestionListItem(BaseModel):
     tricky_pattern: str | None = None
     difficulty: Difficulty
     translations_status: str  # e.g. "complete", "en_only", "pt_only"
+    image_url: str | None = None
 
 
 class QuestionDetail(QuestionListItem):
@@ -31,3 +32,4 @@ class QuestionDetail(QuestionListItem):
     answer_pt: str
     explanation_en: str
     explanation_pt: str
+    image_url: str | None = None  # inherited from QuestionListItem, explicit for clarity
