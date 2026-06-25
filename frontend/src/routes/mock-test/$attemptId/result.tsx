@@ -139,6 +139,8 @@ interface ReviewItemProps {
 function ReviewItem({ answer, index, language, t }: ReviewItemProps) {
   const [expanded, setExpanded] = useState(false);
 
+  const prompt =
+    language === "en" ? answer.prompt_en || "" : answer.prompt_pt || "";
   const userAnswerLabel =
     answer.user_answer === "true"
       ? t("common.buttons.true")
@@ -174,6 +176,22 @@ function ReviewItem({ answer, index, language, t }: ReviewItemProps) {
         </div>
       </CardHeader>
       <CardContent className="pt-0">
+        {/* Question image */}
+        {answer.image_url && (
+          <div className="mb-3 flex justify-center" data-testid={`review-image-${index}`}>
+            <img
+              src={answer.image_url}
+              alt={t("mockTest.questionImageAlt")}
+              className="max-h-48 w-auto rounded-lg border object-contain"
+            />
+          </div>
+        )}
+        {/* Question prompt */}
+        {prompt && (
+          <p className="mb-3 text-sm font-medium leading-relaxed" data-testid={`review-prompt-${index}`}>
+            {prompt}
+          </p>
+        )}
         {/* Answer summary */}
         <div className="space-y-1 text-sm mb-3">
           <p className="text-muted-foreground">

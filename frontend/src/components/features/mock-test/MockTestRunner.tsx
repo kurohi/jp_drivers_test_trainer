@@ -200,6 +200,17 @@ export function MockTestRunner({ attemptId, paramAttemptId }: MockTestRunnerProp
 
       <Card data-testid="question-card" className="mb-6">
         <CardContent className="pt-6">
+          {/* Image display — shown when question has an associated image */}
+          {currentQuestion.image_url && (
+            <div className="mb-4 flex justify-center" data-testid="question-image-container">
+              <img
+                src={currentQuestion.image_url}
+                alt={t("mockTest.questionImageAlt")}
+                className="max-h-64 w-auto rounded-lg border object-contain"
+                data-testid="question-image"
+              />
+            </div>
+          )}
           <div className="flex items-start gap-3 mb-6">
             <span className="text-sm font-bold text-muted-foreground shrink-0">
               {currentIndex + 1}.
