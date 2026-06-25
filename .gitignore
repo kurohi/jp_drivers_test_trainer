@@ -52,5 +52,10 @@ frontend/playwright-report/
 frontend/test-results/
 frontend/tsconfig.tsbuildinfo
 
+# SQLite WAL files (transient)
+data/*.sqlite-shm
+data/*.sqlite-wal
+data/*.sqlite-journal
+
 # OpenCode evidence
 .omo/
