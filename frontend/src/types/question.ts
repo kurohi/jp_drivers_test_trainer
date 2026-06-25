@@ -12,6 +12,7 @@ export interface QuestionListItem {
   tricky_pattern: string | null;
   difficulty: Difficulty;
   translations_status: string;
+  image_url?: string | null;
 }
 
 export interface QuestionDetail extends QuestionListItem {

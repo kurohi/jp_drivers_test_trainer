@@ -28,6 +28,9 @@ export interface AttemptAnswerOut {
   is_correct: boolean;
   user_answer: UserAnswer;
   correct_answer: UserAnswer;
+  prompt_en?: string;
+  prompt_pt?: string;
+  image_url?: string | null;
   explanation_en: string;
   explanation_pt: string;
 }
