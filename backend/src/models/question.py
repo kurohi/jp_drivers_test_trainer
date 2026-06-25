@@ -34,6 +34,7 @@ class Question(Base):
     translations_status: Mapped[str] = mapped_column(
         String(20), default="missing"
     )  # "verified" | "machine" | "missing"
+    image_url: Mapped[Optional[str]] = mapped_column(String(500), nullable=True)
     source_url: Mapped[Optional[str]] = mapped_column(String(500), nullable=True)
     license: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
     attribution: Mapped[Optional[str]] = mapped_column(String(200), nullable=True)
