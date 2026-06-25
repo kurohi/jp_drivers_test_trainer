@@ -206,6 +206,21 @@ function QuestionCard({ question, index, language, t }: QuestionCardProps) {
       </CardHeader>
 
       <CardContent className="space-y-4">
+        {/* Image display — shown when question has an associated image */}
+        {question.image_url && (
+          <div
+            className="mb-2 flex justify-center"
+            data-testid={`question-image-container-${question.id}`}
+          >
+            <img
+              src={question.image_url}
+              alt={t("mockTest.questionImageAlt")}
+              className="max-h-64 w-auto rounded-lg border object-contain"
+              data-testid={`question-image-${question.id}`}
+            />
+          </div>
+        )}
+
         {/* True / False buttons */}
         <div className="flex items-center gap-3">
           <span className="text-sm text-muted-foreground">
