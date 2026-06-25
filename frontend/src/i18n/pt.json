@@ -130,6 +130,7 @@
     "generatePlan": "Gerar Plano de Estudo",
     "reviewTitle": "Revisão das Questões",
     "reviewSubtitle": "Revise cada questão e entenda seus erros.",
+    "questionImageAlt": "Diagrama da questão ou placa de trânsito",
     "yourAnswerLabel": "Sua resposta",
     "correctAnswerLabel": "Resposta correta",
     "whyLabel": "Por quê?"

@@ -130,6 +130,7 @@
     "generatePlan": "Generate Study Plan",
     "reviewTitle": "Question Review",
     "reviewSubtitle": "Review each question and understand your mistakes.",
+    "questionImageAlt": "Question diagram or road sign",
     "yourAnswerLabel": "Your answer",
     "correctAnswerLabel": "Correct answer",
     "whyLabel": "Why?"
