@@ -82,6 +82,7 @@ class MockTestService:
                 "theme_id": q.theme_id,
                 "prompt_en": q.prompt_en,
                 "prompt_pt": q.prompt_pt,
+                "image_url": q.image_url,
                 "tricky": q.tricky,
                 "tricky_pattern": q.tricky_pattern,
                 "difficulty": q.difficulty,
@@ -156,6 +157,9 @@ class MockTestService:
                     is_correct=is_correct,
                     user_answer=ua.user_answer,
                     correct_answer=correct_answer,
+                    prompt_en=question.prompt_en,
+                    prompt_pt=question.prompt_pt,
+                    image_url=question.image_url,
                     explanation_en=question.explanation_en,
                     explanation_pt=question.explanation_pt,
                 )
